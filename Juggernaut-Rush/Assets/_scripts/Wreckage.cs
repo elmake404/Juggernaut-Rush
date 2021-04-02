@@ -18,7 +18,7 @@ public class Wreckage : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            _rbWreckage.isKinematic = !_rbWreckage.isKinematic;
+            gameObject.SetActive(false);
         }
     }
     public void PushWreckage(Vector3 direction,Vector3 contactPoint,float forse)
@@ -26,6 +26,7 @@ public class Wreckage : MonoBehaviour
         Destroy(_fixedJoint);
         _rbWreckage.AddForceAtPosition(direction*forse, contactPoint, ForceMode.Acceleration);
         enabled = false;
+        Destroy(gameObject,2);
     }
     [ContextMenu("Initialization")]
     private void Initialization()

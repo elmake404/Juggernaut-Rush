@@ -11,13 +11,12 @@ public class PlayerWreck : MonoBehaviour
         var wreckage = collision.collider.GetComponent<Wreckage>();
         if (wreckage != null)
         {
-            Debug.Log(1);
             wreckage.PushWreckage((wreckage.transform.position - transform.position).normalized, collision.contacts[0].point, _impactStrength);
         }
     }
     private void OnTriggerEnter(Collider other)
     {
-        var wall = other.GetComponent<WholeWall>();
+        var wall = other.GetComponent<WholeObj>();
         if (wall != null)
         {
             wall.ActivationWallWreckage();
