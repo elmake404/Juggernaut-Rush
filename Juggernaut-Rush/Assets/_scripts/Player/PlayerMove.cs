@@ -6,6 +6,10 @@ public class PlayerMove : MonoBehaviour
 {
     private Vector3 _startTouchPos, _currentPosPlayer, _targetPosPlayer;
     private Camera _cam;
+    [SerializeField]
+    private PlayerLife _playerLife;
+    [SerializeField]
+    private Rigidbody _rbMain;
 
     [SerializeField]
     private float _lateralSpeed, _runningSpeed;
@@ -50,10 +54,20 @@ public class PlayerMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Vector3 PosX = transform.position;
-        PosX.x = _targetPosPlayer.x;
-        transform.position = Vector3.MoveTowards(transform.position, PosX, _lateralSpeed);
-        transform.Translate(Vector3.forward*_runningSpeed);
+        if (_playerLife.IsLife)
+        {
+            Vector3 PosX = transform.position;
+            PosX.x = _targetPosPlayer.x;
+            transform.position = Vector3.MoveTowards(transform.position, PosX, _lateralSpeed);
+
+            transform.Translate(Vector3.forward * _runningSpeed);
+        }
     }
+    public void GameOver()
+    {
+        _rbMain.constraints = RigidbodyConstraints.None;
+        _rbMain.AddForce(new Vector3(0,-1,2) *500,ForceMode.Acceleration);
+    }
+    public bool GetLife() => _playerLife.IsLife;
 
 }

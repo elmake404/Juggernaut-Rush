@@ -8,13 +8,8 @@ public class Wreckage : MonoBehaviour
     private Rigidbody _rbWreckage;
     [SerializeField]
     private FixedJoint _fixedJoint;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
