@@ -475,7 +475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5179142317572057200}
   m_Layer: 0
-  m_Name: hulk@Run
+  m_Name: Run
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1041,8 +1041,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8094482425047340766, guid: ff587e3412ae3404e8cebb705d22941c, type: 3}
-  - {fileID: 1741295270093611161, guid: ff587e3412ae3404e8cebb705d22941c, type: 3}
+  - {fileID: 2100000, guid: 1c3052e572dfa504eb95cd86406834e8, type: 2}
+  - {fileID: 2100000, guid: 1c3052e572dfa504eb95cd86406834e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
