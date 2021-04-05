@@ -7,8 +7,6 @@ public class PlayerMove : MonoBehaviour
     private Vector3 _startTouchPos, _currentPosPlayer, _targetPosPlayer;
     private Camera _cam;
     [SerializeField]
-    private PlayerLife _playerLife;
-    [SerializeField]
     private Rigidbody _rbMain;
 
     [SerializeField]
@@ -21,7 +19,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void Update()
     {
-        if (TouchUtility.TouchCount > 0)
+        if (TouchUtility.TouchCount > 0 && GameStage.IsGameFlowe)
         {
             Touch touch = TouchUtility.GetTouch(0);
 
@@ -54,7 +52,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (_playerLife.IsLife)
+        if (GameStage.IsGameFlowe)
         {
             Vector3 PosX = transform.position;
             PosX.x = _targetPosPlayer.x;
@@ -65,9 +63,11 @@ public class PlayerMove : MonoBehaviour
     }
     public void GameOver()
     {
-        _rbMain.constraints = RigidbodyConstraints.None;
-        _rbMain.AddForce(new Vector3(0,-1,2) *500,ForceMode.Acceleration);
+        _rbMain.constraints = RigidbodyConstraints.FreezeRotation;
+        _rbMain.AddForce(Vector3.forward*500,ForceMode.Acceleration);
+       transform.GetChild(0).gameObject.layer=8;
+        
+        GameStage.Instance.ChangeStage(Stage.LostGame);
     }
-    public bool GetLife() => _playerLife.IsLife;
 
 }

@@ -780,6 +780,8 @@ GameObject:
   - component: {fileID: 223925975332372032}
   - component: {fileID: 114628866344963822}
   - component: {fileID: 114085103480830806}
+  - component: {fileID: 4840956848134484054}
+  - component: {fileID: 2188399482116124601}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -871,6 +873,35 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4840956848134484054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155838776360770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a085ac0449fc06942ab27e00d41caecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _menuUI: {fileID: 1168849908791638}
+  _inGameUI: {fileID: 1777170646809218}
+  _wimIU: {fileID: 1326874676435430}
+  _lostUI: {fileID: 1401342752598832}
+--- !u!114 &2188399482116124601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155838776360770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206250c831d92b2409a9ef712c94c47d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvasManager: {fileID: 4840956848134484054}
 --- !u!1 &1168849908791638
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +913,7 @@ GameObject:
   - component: {fileID: 224262928069604614}
   - component: {fileID: 222320103618828864}
   - component: {fileID: 114063766649528772}
+  - component: {fileID: 8300658169936666984}
   m_Layer: 5
   m_Name: MenuUI
   m_TagString: Untagged
@@ -948,6 +980,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8300658169936666984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168849908791638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49f514a56de024459b727429a058c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1169145266511526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,6 +2460,7 @@ GameObject:
   - component: {fileID: 224358153135785456}
   - component: {fileID: 222574322450402594}
   - component: {fileID: 114357530374569584}
+  - component: {fileID: 7781785298588078662}
   m_Layer: 5
   m_Name: LostUI
   m_TagString: Untagged
@@ -2482,6 +2527,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7781785298588078662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401342752598832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0939354fcb859d549ac5c839a6e38823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1414646230702184
 GameObject:
   m_ObjectHideFlags: 0
