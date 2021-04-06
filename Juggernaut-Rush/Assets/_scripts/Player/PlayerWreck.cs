@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerWreck : MonoBehaviour
 {
     [SerializeField]
+    private PlayerLife _playerLife;
+    [SerializeField]
     private float _impactStrength;
+
     private void OnCollisionEnter(Collision collision)
     {
         var wreckage = collision.collider.GetComponent<Wreckage>();
@@ -19,6 +22,7 @@ public class PlayerWreck : MonoBehaviour
         var wall = other.GetComponent<WholeObj>();
         if (wall != null)
         {
+            _playerLife.RestoringRage(wall.PercentagofRageRecovery);
             wall.ActivationWallWreckage();
         }
     }

@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallWreckage: {fileID: 1928903703328249431}
+  _percentagofRageRecovery: 100
 --- !u!1001 &5311518659928020004
 PrefabInstance:
   m_ObjectHideFlags: 0

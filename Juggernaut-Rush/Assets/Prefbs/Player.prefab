@@ -93,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 5737063390685199220}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 72af6baf0bebcff419caaff0869dc1cb, type: 2}
+  m_Controller: {fileID: 9100000, guid: d165044c23d09334f8df82753cb6481d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -166,7 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b9b30bb438fa645907fd9d56d24918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rbMain: {fileID: 8963431280267053461}
   _lateralSpeed: 0.1
   _runningSpeed: 0.3
 --- !u!114 &8963431280267053471
@@ -181,6 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86046ec4a52baae428d47b81e7dd506d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerLife: {fileID: 2316373548210243520}
   _impactStrength: 1000
 --- !u!114 &2316373548210243520
 MonoBehaviour:
@@ -194,6 +194,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e84b6c997da464284e60d3dc85949c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 8261234277785098773}
+  _rbMain: {fileID: 8963431280267053461}
+  _meshMaterial: {fileID: 2100000, guid: 1c3052e572dfa504eb95cd86406834e8, type: 2}
+  _colorRage: {r: 1, g: 0, b: 0, a: 1}
+  _colorOfCalm: {r: 1, g: 1, b: 1, a: 1}
+  _timeRage: 7
 --- !u!1001 &231361513402878398
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class GameStage : MonoBehaviour
     private static bool _isGameStart;
     public static bool IsGameFlowe
     { get; private set; }
+    public delegate void Empty();
+    public event Empty StartLevel;
 
     [SerializeField]
     private CanvasManager _canvasManager;
@@ -21,6 +23,9 @@ public class GameStage : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+    private void Start()
+    {
         ChangeStage(_isGameStart ? Stage.StartLevel : Stage.StartGame);
     }
 
@@ -42,6 +47,7 @@ public class GameStage : MonoBehaviour
 
             case Stage.StartLevel:
 
+                StartLevel.Invoke();
                 IsGameFlowe = true;
                 break;
 

@@ -1,13 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CanvasManager : MonoBehaviour
 {
 
     [SerializeField]
     private GameObject _menuUI, _inGameUI, _wimIU, _lostUI;
+    [SerializeField]
+    private Image _rageBar;
+    private PlayerLife _playerLife;
 
+    private float _amountRage;
+
+    private void Start()
+    {
+        _rageBar.fillAmount = 1;
+        _playerLife = FindObjectOfType<PlayerLife>();
+    }
+    private void FixedUpdate()
+    {
+        _rageBar.fillAmount = Mathf.LerpUnclamped(_rageBar.fillAmount, _playerLife.GetAmoutRage(), 0.1f);
+    }
     public void GameStageWindow(Stage stageGame)
     {
         switch (stageGame)
