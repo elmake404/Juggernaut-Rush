@@ -8,6 +8,8 @@ public class PlayerMove : MonoBehaviour
     private Camera _cam;
     [SerializeField]
     private Rigidbody _rbMain;
+    [SerializeField]
+    private Animator _animator;
 
     [SerializeField]
     private float _lateralSpeed, _runningSpeed;
