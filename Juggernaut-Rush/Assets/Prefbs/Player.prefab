@@ -166,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b9b30bb438fa645907fd9d56d24918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lateralSpeed: 0.1
-  _runningSpeed: 0.3
+  _lateralSpeed: 0.2
+  _runningSpeed: 0.5
 --- !u!114 &8963431280267053471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   _meshMaterial: {fileID: 2100000, guid: 1c3052e572dfa504eb95cd86406834e8, type: 2}
   _colorRage: {r: 1, g: 0, b: 0, a: 1}
   _colorOfCalm: {r: 1, g: 1, b: 1, a: 1}
-  _timeRage: 7
+  _timeRage: 4
 --- !u!1001 &231361513402878398
 PrefabInstance:
   m_ObjectHideFlags: 0
