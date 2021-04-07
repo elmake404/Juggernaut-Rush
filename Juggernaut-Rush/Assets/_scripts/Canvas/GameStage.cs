@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public static class GameStageEvent
+{
+    public delegate void Empty();
+    public static event Empty StartLevel;
+    public static void InvokeStartLevel()
+    {
+        StartLevel.Invoke();
+    }
+}
 public enum Stage { StartGame, StartLevel, WinGame, LostGame }
 public class GameStage : MonoBehaviour
 {
@@ -10,13 +19,9 @@ public class GameStage : MonoBehaviour
     private static bool _isGameStart;
     public static bool IsGameFlowe
     { get; private set; }
-    public delegate void Empty();
-    public event Empty StartLevel;
 
     [SerializeField]
     private CanvasManager _canvasManager;
-
-
     public Stage StageGame
     { get; private set; }
 
@@ -47,7 +52,7 @@ public class GameStage : MonoBehaviour
 
             case Stage.StartLevel:
 
-                StartLevel.Invoke();
+                GameStageEvent.InvokeStartLevel();
                 IsGameFlowe = true;
                 break;
 

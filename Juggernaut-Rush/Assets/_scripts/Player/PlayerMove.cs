@@ -4,14 +4,31 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    [System.Serializable]
+    public struct MinMaxFalot
+    {
+        public float Min;
+        public float Max;
+        private float _difference 
+        { get { return Max - Min; } }
+
+        public float GetSpeed (float Amout)
+        {
+            return Min + (_difference*Amout);
+        }
+    }
     private Vector3 _startTouchPos, _currentPosPlayer, _targetPosPlayer;
     private Camera _cam;
+    [SerializeField]
+    private PlayerLife _playerLife;
 
     [SerializeField]
-    private float _lateralSpeed, _runningSpeed;
+    private MinMaxFalot _lateralSpeed, _runningSpeed;
+    private float _amoutRage { get { return _playerLife.GetAmoutRage(); } }
 
     private void Awake()
     {
+
     }
     void Start()
     {
@@ -28,6 +45,7 @@ public class PlayerMove : MonoBehaviour
             {
                 Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
                 _currentPosPlayer = transform.position;
+
                 _startTouchPos = (_cam.transform.position - ((ray.direction) *
                         ((_cam.transform.position - transform.position).z / ray.direction.z)));
             }
@@ -57,10 +75,11 @@ public class PlayerMove : MonoBehaviour
         {            
             Vector3 PosX = transform.position;
             PosX.x = _targetPosPlayer.x;
-            transform.position = Vector3.MoveTowards(transform.position, PosX, _lateralSpeed);
+            transform.position = Vector3.MoveTowards(transform.position, PosX, GetSpeed(_lateralSpeed));
 
-            transform.Translate(Vector3.forward * _runningSpeed);
+            transform.Translate(Vector3.forward * GetSpeed(_runningSpeed));
         }
     }
+    private float GetSpeed(MinMaxFalot Speed) => Speed.GetSpeed(_amoutRage);
 
 }

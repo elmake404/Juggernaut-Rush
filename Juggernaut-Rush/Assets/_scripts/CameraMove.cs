@@ -11,7 +11,7 @@ public class CameraMove : MonoBehaviour
 
     private void Start()
     {
-        _target = FindObjectOfType<PlayerMove>();
+        _target = PlayerLife.Instance.GetComponent<PlayerMove>();
         _offset = transform.position - _target.transform.position;
     }
 
@@ -19,7 +19,9 @@ public class CameraMove : MonoBehaviour
     {
         if (GameStage.IsGameFlowe)
         {
-            transform.position = Vector3.SmoothDamp(transform.position, _target.transform.position + _offset, ref _velocity, _smoothTime);
+            Vector3 NextPosCamera = (_target.transform.position + _offset);
+            NextPosCamera.x = transform.position.x;
+            transform.position = Vector3.SmoothDamp(transform.position, NextPosCamera, ref _velocity, _smoothTime);
         }
     }
 }

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerLife : MonoBehaviour
 {
-    public delegate void ActionFloat(float item);
-    public event ActionFloat RageAmount;
+    public static PlayerLife Instance;
 
     private List<GameObject> _listFloor = new List<GameObject>();
     [SerializeField]
@@ -14,6 +13,7 @@ public class PlayerLife : MonoBehaviour
     private Rigidbody _rbMain;
     [SerializeField]
     private Material _meshMaterial;
+
     [SerializeField]
     private Color _colorRage = Color.red, _colorOfCalm = Color.white;
     private Color _differenceColor;
@@ -24,8 +24,12 @@ public class PlayerLife : MonoBehaviour
 
     private void Awake()
     {
-        var gameStage = FindObjectOfType<GameStage>();
-        gameStage.StartLevel += StartAnimationRun;
+        Instance = this;
+        GameStageEvent.StartLevel += StartAnimationRun;
+    }
+    private void OnApplicationQuit()
+    {
+        GameStageEvent.StartLevel -= StartAnimationRun;
     }
     private void Start()
     {
@@ -47,6 +51,7 @@ public class PlayerLife : MonoBehaviour
                 _animator.SetBool("Run", false);
                 GameStage.Instance.ChangeStage(Stage.LostGame);
             }
+
             _meshMaterial.color = _colorRage + (_differenceColor / 100) * ((_timeRage - _timerRage) / _timeRage * 100);
         }
     }
@@ -70,7 +75,12 @@ public class PlayerLife : MonoBehaviour
             }
         }
     }
-    public void GameOver()
+    private void StartAnimationRun()
+    {
+        _animator.SetBool("Run", true);
+        GameStageEvent.StartLevel -= StartAnimationRun;
+    }
+    private void GameOver()
     {
         _rbMain.constraints = RigidbodyConstraints.FreezeRotation;
         _rbMain.AddForce(Vector3.forward * 500, ForceMode.Acceleration);
@@ -78,16 +88,12 @@ public class PlayerLife : MonoBehaviour
 
         GameStage.Instance.ChangeStage(Stage.LostGame);
     }
-    private void StartAnimationRun()
-    {
-        _animator.SetBool("Run", true);
-    }
 
     public float GetAmoutRage() => (_timerRage / _timeRage);
     public void RestoringRage(float procent)
     {
         _timerRage += _timeRage / 100 * procent;
-        if (_timerRage>_timeRage)
+        if (_timerRage > _timeRage)
         {
             _timerRage = _timeRage;
         }
