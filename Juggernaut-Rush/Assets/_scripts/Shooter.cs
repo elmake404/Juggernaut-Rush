@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooter : MonoBehaviour
+public class Shooter : WholeObj
 {
+    [SerializeField]
+    private Rigidbody _torso;
     [SerializeField]
     private Transform _shotPos;
     [SerializeField]
     private Bullet _bullet;
-    private Transform _target { get { return PlayerLife.Instance.transform; } }
+    private Transform _target 
+    { get { return PlayerLife.Instance.transform; } }
     [SerializeField]
     private BulletCharacteristics _bulletCharacteristics;
 
@@ -53,5 +56,13 @@ public class Shooter : MonoBehaviour
     {
         Bullet bullet = Instantiate(_bullet, _shotPos.position, _shotPos.rotation);
         bullet.Initialization(_bulletCharacteristics);
+    }
+    public override void ActivationWallWreckage()
+    {
+        _wallWreckage.SetActive(true);
+        _wallWreckage.transform.parent.SetParent(null);
+        Vector3 direction = transform.position- _target.transform.position ;
+        _torso.AddForce(direction.normalized*10000,ForceMode.Acceleration);
+        Destroy(gameObject);
     }
 }
