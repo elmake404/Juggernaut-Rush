@@ -5,28 +5,27 @@ using UnityEngine;
 [System.Serializable]
 public struct BulletCharacteristics
 {
-    public float FlightSpeed, TimeLife;
+    public float FlightSpeed, TimeLife , DamagePercentage;
 }
 
 public class Bullet : MonoBehaviour
 {
-    private float _flightSpeed, _timeLife;
+    private BulletCharacteristics _characteristics;
     private void FixedUpdate()
     {
-        transform.Translate(Vector3.forward * _flightSpeed);
+        transform.Translate(Vector3.forward * _characteristics.FlightSpeed);
     }
     private void OnTriggerEnter(Collider other)
     {
-        var player = other.GetComponent<PlayerMove>();
-        if (player!=null)
+        if (other.transform.parent.gameObject == PlayerLife.Instance.gameObject )
         {
+            PlayerLife.Instance.RestoringRage(_characteristics.DamagePercentage);
             Destroy(gameObject);
         }
     }
     public void Initialization(BulletCharacteristics bullet)
     {
-        _flightSpeed = bullet.FlightSpeed;
-        _timeLife = bullet.TimeLife;
-        Destroy(gameObject,_timeLife);
+        _characteristics = bullet;
+        Destroy(gameObject,bullet.TimeLife);
     }
 }

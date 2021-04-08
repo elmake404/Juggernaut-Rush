@@ -34,7 +34,6 @@ public class Shooter : WholeObj
     {
         Vector3 posTarget = _target.position;
         posTarget.y = transform.position.y;
-        posTarget.z += 2;
         Quaternion rotation = Quaternion.LookRotation(posTarget - transform.position);
 
         transform.rotation = Quaternion.Slerp(transform.rotation,rotation, _rotationSpeed);
