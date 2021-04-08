@@ -147,6 +147,156 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2841751741686815012}
     m_Modifications:
+    - target: {fileID: 63918288911120699, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 122413819457748250, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 233889544185266067, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 692630808946738577, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 844163245616580438, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037198416425352483, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340215695298151432, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371085021336438245, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524344268482780621, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840073769547278157, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137042831191490242, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795293056771011914, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900931637660721830, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907635701462861948, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075076402224914651, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591426395788073374, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597522712470869700, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632623447211675852, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3669254149656755695, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3852691513078451245, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376863357443620003, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379765612319952131, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611181834039827681, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671828999765949531, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4793802431418560428, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217668493635265965, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377487076913985541, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803458879849728549, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893569204568784315, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6006574735205380689, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
     - target: {fileID: 6013037393220633203, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_Name
@@ -156,6 +306,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6041761435477290260, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213650874761730631, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259656919436640645, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
       objectReference: {fileID: 0}
     - target: {fileID: 6357192656556054729, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -216,6 +381,91 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571639252630136045, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705288176830417880, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748026830228998309, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791733593830094803, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933754001089832594, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7662389265821837179, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7697494217332084878, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718246488460747407, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126540006547204368, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169011316494805661, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281484809487700912, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367207540911709782, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387187869307908432, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843997552502229706, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 9049648189634011978, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064008610761597746, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109006493992956448, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: Infinity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef0b6632b22b1964e8571badc36348be, type: 3}

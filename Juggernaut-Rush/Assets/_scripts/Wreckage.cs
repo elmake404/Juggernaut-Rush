@@ -19,6 +19,7 @@ public class Wreckage : MonoBehaviour
     public void PushWreckage(Vector3 direction,Vector3 contactPoint,float forse)
     {
         Destroy(_fixedJoint);
+        transform.SetParent(null);
         _rbWreckage.AddForceAtPosition(direction*forse, contactPoint, ForceMode.Acceleration);
         enabled = false;
         Destroy(gameObject,2);

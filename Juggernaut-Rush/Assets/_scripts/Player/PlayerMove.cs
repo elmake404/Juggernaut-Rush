@@ -85,11 +85,14 @@ public class PlayerMove : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        SpeedInspector inspector = other.transform.parent.GetComponent<SpeedInspector>();
-        if (inspector != null)
+        if (other.transform.parent!=null)
         {
-            StartCoroutine(Buff(inspector.Bonus,inspector.TimeOfAction));
-            Destroy(inspector.gameObject);
+            SpeedInspector inspector = other.transform.parent.GetComponent<SpeedInspector>();
+            if (inspector != null)
+            {
+                StartCoroutine(Buff(inspector.Bonus, inspector.TimeOfAction));
+                Destroy(inspector.gameObject);
+            }
         }
     }
     private IEnumerator Buff(float Procent,float time)
