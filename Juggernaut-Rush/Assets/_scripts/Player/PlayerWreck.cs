@@ -9,6 +9,9 @@ public class PlayerWreck : MonoBehaviour
     [SerializeField]
     private float _impactStrength;
 
+    public delegate void StressTransmitter(float stress);
+    public event StressTransmitter OnWreck;
+
     private void OnCollisionEnter(Collision collision)
     {
         var wreckage = collision.collider.GetComponent<Wreckage>();
@@ -22,6 +25,8 @@ public class PlayerWreck : MonoBehaviour
         var wall = other.GetComponent<WholeObj>();
         if (wall != null)
         {
+            OnWreck?.Invoke(wall.StressLevel);
+
             _playerLife.RestoringRage(wall.PercentagofRageRecovery);
             wall.ActivationWallWreckage();
         }

@@ -139,7 +139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallWreckage: {fileID: 1928903703328249431}
-  _percentagofRageRecovery: 100
+  _percentagofRageRecovery: 50
+  _stressLevel: 0.2
 --- !u!1001 &5311518659928020004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -152,6 +153,11 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 119509193153480707, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 122413819457748250, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
@@ -161,6 +167,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 308050458210459889, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 546615065692307305, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 692630808946738577, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -172,10 +188,25 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 991173181353722804, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1037198416425352483, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123030237114892477, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157355678351668793, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1340215695298151432, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -187,10 +218,35 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 1387739835575193836, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1524344268482780621, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601164110558305325, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1673891670481563387, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718882901534498988, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767397719036521718, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1840073769547278157, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -202,10 +258,40 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 2349911632669523426, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535220834224637526, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673610263814594276, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2757513241555872787, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2769941853780174586, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2795293056771011914, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879003605490001816, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2900931637660721830, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -221,6 +307,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177885511573299185, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245052111552222407, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346016855000862217, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3469817762368888893, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572052856669971276, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3591426395788073374, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -247,6 +358,11 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 4140031225328674753, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4376863357443620003, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
@@ -257,10 +373,30 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 4557651719586121181, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589744100532297833, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4611181834039827681, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651127412365473180, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654189625964148421, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4671828999765949531, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -282,6 +418,21 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 5638131916350529363, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694508473291887845, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5704934588969169850, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5803458879849728549, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
@@ -291,6 +442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995505247051894145, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6006574735205380689, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -312,6 +468,21 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 6106622685692905252, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116084263037899212, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144822262669715332, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6213650874761730631, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
@@ -321,6 +492,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338315517994820896, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6357192656556054729, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -382,10 +558,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6454024721674338681, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6571639252630136045, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674338230556617210, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6705288176830417880, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -397,15 +583,45 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 6783801972567305720, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6791733593830094803, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 6866729436351042416, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6933754001089832594, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7088416780814331514, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501773055240417532, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7506619952078578513, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618218090063421471, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7662389265821837179, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -421,6 +637,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914816571192575821, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062132315938565023, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8126540006547204368, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
@@ -447,10 +673,35 @@ PrefabInstance:
       propertyPath: m_BreakTorque
       value: Infinity
       objectReference: {fileID: 0}
+    - target: {fileID: 8660880061928688910, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816683766382357722, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8843997552502229706, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}
       propertyPath: m_BreakTorque
       value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8964423625331124482, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025401437308978104, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045139547169948490, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9049648189634011978, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}

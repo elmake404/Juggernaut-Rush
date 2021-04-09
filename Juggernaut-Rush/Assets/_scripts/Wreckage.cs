@@ -8,7 +8,6 @@ public class Wreckage : MonoBehaviour
     private Rigidbody _rbWreckage;
     [SerializeField]
     private FixedJoint _fixedJoint;
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))

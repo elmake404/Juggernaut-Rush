@@ -33,7 +33,7 @@ public class PlayerMove : MonoBehaviour
     {
 
     }
-    void Start()
+    private void Start()
     {
         _targetPosPlayer = transform.position;
         _cam = Camera.main;

@@ -14,6 +14,7 @@ public class CameraMove : MonoBehaviour
 
     private void Start()
     {
+        FindObjectOfType<PlayerWreck>().OnWreck += _stressReceiver.InduceStress;
         _target = PlayerLife.Instance.GetComponent<PlayerMove>();
         _offset = transform.position - _target.transform.position;
     }

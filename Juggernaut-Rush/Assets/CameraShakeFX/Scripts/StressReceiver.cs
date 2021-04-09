@@ -53,7 +53,7 @@ public class StressReceiver : MonoBehaviour
     /// </summary>
     /// <param name="Stress">[0,1] Amount of stress to apply to the object</param>
     public void InduceStress(float Stress)
-    {        
+    {
         _trauma = Mathf.Clamp01(_trauma + Stress);
     }
 }
