@@ -17,6 +17,12 @@ public class Wreckage : MonoBehaviour
     }
     public void PushWreckage(Vector3 direction,Vector3 contactPoint,float forse)
     {
+        ////
+        #region crutch
+        direction.y /= 4;
+        direction.z *= 4;
+        #endregion
+
         Destroy(_fixedJoint);
         transform.SetParent(null);
         _rbWreckage.AddForceAtPosition(direction*forse, contactPoint, ForceMode.Acceleration);
