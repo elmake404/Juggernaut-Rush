@@ -20,7 +20,7 @@ public class Wreckage : MonoBehaviour
         ////
         #region crutch
         direction.y /= 4;
-        direction.z *= 4;
+        direction.z *= 2;
         #endregion
 
         Destroy(_fixedJoint);
