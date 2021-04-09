@@ -168,11 +168,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerLife: {fileID: 2316373548210243520}
   _lateralSpeed:
-    Min: 0.1
-    Max: 0.2
+    Min: 0.15
+    Max: 0.25
   _runningSpeed:
-    Min: 0.3
-    Max: 0.5
+    Min: 0.15
+    Max: 0.35
 --- !u!114 &8963431280267053471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerLife: {fileID: 2316373548210243520}
-  _impactStrength: 1000
+  _impactStrength: 750
 --- !u!114 &2316373548210243520
 MonoBehaviour:
   m_ObjectHideFlags: 0

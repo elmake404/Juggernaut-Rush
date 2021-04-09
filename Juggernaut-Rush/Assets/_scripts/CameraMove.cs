@@ -5,9 +5,12 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     [SerializeField]
-    private float _smoothTime;
+    private StressReceiver _stressReceiver;
     private PlayerMove _target;
     private Vector3 _velocity, _offset;
+    [SerializeField]
+    private float _smoothTime;
+
 
     private void Start()
     {

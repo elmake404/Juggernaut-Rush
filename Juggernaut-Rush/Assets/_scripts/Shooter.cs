@@ -16,7 +16,7 @@ public class Shooter : WholeObj
     private BulletCharacteristics _bulletCharacteristics;
 
     [SerializeField]
-    private float _delayTimeBeforeShot,_rotationSpeed;
+    private float _pushForce, _delayTimeBeforeShot,_rotationSpeed;
     [SerializeField]
     private bool _isFollowThePlayer;
     private void Awake()
@@ -61,7 +61,7 @@ public class Shooter : WholeObj
         _wallWreckage.SetActive(true);
         _wallWreckage.transform.parent.SetParent(null);
         Vector3 direction = transform.position- _target.transform.position ;
-        _torso.AddForce(direction.normalized*10000,ForceMode.Acceleration);
+        _torso.AddForce(direction.normalized* _pushForce, ForceMode.Acceleration);
         Destroy(gameObject);
     }
 }

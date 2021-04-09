@@ -17,6 +17,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        if(other.transform.parent!=null)
         if (other.transform.parent.gameObject == PlayerLife.Instance.gameObject )
         {
             PlayerLife.Instance.RestoringRage(_characteristics.DamagePercentage);

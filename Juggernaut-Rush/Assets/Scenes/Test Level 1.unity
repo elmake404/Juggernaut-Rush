@@ -318,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 2316373548210243520, guid: 9f4de94c1db67e541b227a0cad1d284f,
         type: 3}
       propertyPath: _timeRage
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3690951079998132390, guid: 9f4de94c1db67e541b227a0cad1d284f,
         type: 3}
@@ -329,26 +329,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963431280267053456, guid: 9f4de94c1db67e541b227a0cad1d284f,
-        type: 3}
-      propertyPath: _runningSpeed.Max
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963431280267053456, guid: 9f4de94c1db67e541b227a0cad1d284f,
-        type: 3}
-      propertyPath: _runningSpeed.Min
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963431280267053456, guid: 9f4de94c1db67e541b227a0cad1d284f,
-        type: 3}
-      propertyPath: _lateralSpeed.Max
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963431280267053456, guid: 9f4de94c1db67e541b227a0cad1d284f,
-        type: 3}
-      propertyPath: _lateralSpeed.Min
-      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8963431280267053457, guid: 9f4de94c1db67e541b227a0cad1d284f,
         type: 3}
@@ -424,11 +404,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963431280267053471, guid: 9f4de94c1db67e541b227a0cad1d284f,
-        type: 3}
-      propertyPath: _impactStrength
-      value: 750
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f4de94c1db67e541b227a0cad1d284f, type: 3}
@@ -1289,6 +1264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b66f6673cd0a2e94bafe53bd8c2bdcbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stressReceiver: {fileID: 0}
   _smoothTime: 0.5
 --- !u!1001 &538152194
 PrefabInstance:

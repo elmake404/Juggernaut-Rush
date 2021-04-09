@@ -88,6 +88,7 @@ MonoBehaviour:
     FlightSpeed: 0.7
     TimeLife: 1
     DamagePercentage: -25
+  _pushForce: 10000
   _delayTimeBeforeShot: 0.5
   _rotationSpeed: 0.5
   _isFollowThePlayer: 0
