@@ -128,4 +128,23 @@ public class PlayerMove : MonoBehaviour
 
         return Speed.GetSpeed(_amoutRage)+(negative+positive);
     }
+    public float GetAmoutSpeed()
+    {
+        float negative = _amoutRage;
+        for (int i = 0; i < _ListNegativBost.Count; i++)
+        {
+            negative += (negative / 100) * _ListNegativBost[i];
+        }
+        negative -= _amoutRage;
+
+        float positive = _amoutRage;
+        for (int i = 0; i < _ListPositivBost.Count; i++)
+        {
+            positive += (positive / 100) * _ListPositivBost[i];
+        }
+        positive -= _amoutRage;
+
+        return _amoutRage + (negative + positive);
+
+    }
 }

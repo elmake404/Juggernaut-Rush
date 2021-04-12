@@ -13,6 +13,7 @@ public class PlayerLife : MonoBehaviour
     private Rigidbody _rbMain;
     [SerializeField]
     private Material _meshMaterial;
+    private PlayerMove _playerMove;
 
     [SerializeField]
     private Color _colorRage = Color.red, _colorOfCalm = Color.white;
@@ -24,6 +25,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Awake()
     {
+        _playerMove = GetComponent<PlayerMove>();
         Instance = this;
         GameStageEvent.StartLevel += StartAnimationRun;
     }
@@ -43,6 +45,7 @@ public class PlayerLife : MonoBehaviour
         {
             if (_timerRage > 0)
             {
+                _animator.speed = _playerMove.GetAmoutSpeed();
                 _timerRage -= Time.deltaTime;
             }
             else
@@ -53,6 +56,10 @@ public class PlayerLife : MonoBehaviour
             }
 
             _meshMaterial.color = _colorRage + (_differenceColor / 100) * ((_timeRage - _timerRage) / _timeRage * 100);
+        }
+        else
+        {
+            _animator.speed = 1;
         }
     }
     private void OnTriggerEnter(Collider other)
