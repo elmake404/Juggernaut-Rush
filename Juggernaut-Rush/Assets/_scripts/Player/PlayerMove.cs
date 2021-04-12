@@ -90,8 +90,8 @@ public class PlayerMove : MonoBehaviour
             SpeedInspector inspector = other.transform.parent.GetComponent<SpeedInspector>();
             if (inspector != null)
             {
+                inspector.Act();
                 StartCoroutine(Buff(inspector.Bonus, inspector.TimeOfAction));
-                Destroy(inspector.gameObject);
             }
         }
     }

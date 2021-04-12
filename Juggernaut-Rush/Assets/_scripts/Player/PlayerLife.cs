@@ -61,6 +61,13 @@ public class PlayerLife : MonoBehaviour
         {
             _listFloor.Add(other.gameObject);
         }
+
+        if (other.tag == "Finish")
+        {
+            _animator.SetBool("Win",true);
+            _animator.SetBool("Run",false);
+            GameStage.Instance.ChangeStage(Stage.WinGame);
+        }
     }
     private void OnTriggerExit(Collider other)
     {
