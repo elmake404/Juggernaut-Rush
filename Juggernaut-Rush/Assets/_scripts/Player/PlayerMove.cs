@@ -23,7 +23,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private PlayerLife _playerLife;
     [SerializeField]
-    private MinMaxFalot _lateralSpeed, _runningSpeed;
+    private float _lateralSpeed, _runningSpeed;
     private List<float> _ListPositivBost = new List<float>();
     private List<float> _ListNegativBost = new List<float>();
 
@@ -128,41 +128,41 @@ public class PlayerMove : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position- Vector3.right*_horizontalLimit,transform.position+Vector3.right*_horizontalLimit);
     }
-    public float GetSpeed(MinMaxFalot Speed)
+    private float GetSpeed(float Speed)
     {
-        float negative = Speed.GetSpeed(_amoutRage);
+        float negative = Speed;
         for (int i = 0; i < _ListNegativBost.Count; i++)
         {
             negative += (negative / 100) * _ListNegativBost[i];
         }
-        negative -= Speed.GetSpeed(_amoutRage);
+        negative -= Speed;
 
-        float positive = Speed.GetSpeed(_amoutRage);
+        float positive = Speed;
         for (int i = 0; i < _ListPositivBost.Count; i++)
         {
             positive += (positive / 100) * _ListPositivBost[i];
         }
-        positive -= Speed.GetSpeed(_amoutRage);
+        positive -= Speed;
 
-        return Speed.GetSpeed(_amoutRage)+(negative+positive);
+        return Speed+(negative+positive);
     }
     public float GetAmoutSpeed()
     {
-        float negative = _amoutRage;
+        float negative = 1;
         for (int i = 0; i < _ListNegativBost.Count; i++)
         {
             negative += (negative / 100) * _ListNegativBost[i];
         }
-        negative -= _amoutRage;
+        negative -= 1;
 
-        float positive = _amoutRage;
+        float positive = 1;
         for (int i = 0; i < _ListPositivBost.Count; i++)
         {
             positive += (positive / 100) * _ListPositivBost[i];
         }
-        positive -= _amoutRage;
+        positive -= 1;
 
-        return _amoutRage + (negative + positive);
+        return 1 + (negative + positive);
 
     }
     

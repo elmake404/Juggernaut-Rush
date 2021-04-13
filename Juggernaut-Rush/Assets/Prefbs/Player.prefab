@@ -181,12 +181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerLife: {fileID: 2316373548210243520}
-  _lateralSpeed:
-    Min: 0.25
-    Max: 0.25
-  _runningSpeed:
-    Min: 0.35
-    Max: 0.35
+  _lateralSpeed: 0.25
+  _runningSpeed: 0.35
   _horizontalLimit: 12.47
 --- !u!114 &8963431280267053471
 MonoBehaviour:
