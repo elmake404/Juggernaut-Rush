@@ -187,6 +187,7 @@ MonoBehaviour:
   _runningSpeed:
     Min: 0.35
     Max: 0.35
+  _horizontalLimit: 12.47
 --- !u!114 &8963431280267053471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerLife: {fileID: 2316373548210243520}
+  _playerMove: {fileID: 0}
   _impactStrength: 750
 --- !u!114 &2316373548210243520
 MonoBehaviour:

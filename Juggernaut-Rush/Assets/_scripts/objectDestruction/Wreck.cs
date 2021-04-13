@@ -20,5 +20,6 @@ public class Wreck : MonoBehaviour
         _particle.transform.position = posParticle;
         _particle.transform.forward = forvard;
         _particle.Play();
+        Destroy(this);
     }
 }

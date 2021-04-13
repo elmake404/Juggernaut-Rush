@@ -25,7 +25,9 @@ public class Wreckage : MonoBehaviour
 
         Destroy(_fixedJoint);
         transform.SetParent(null);
+
         _rbWreckage.AddForceAtPosition(direction*forse, contactPoint, ForceMode.Acceleration);
+
         enabled = false;
         Destroy(gameObject,2);
     }
@@ -34,5 +36,15 @@ public class Wreckage : MonoBehaviour
     {
         _rbWreckage = GetComponent<Rigidbody>();
         _fixedJoint = GetComponent<FixedJoint>();
+    }
+    public void Explosion(float forese,Vector3 positionExplosion,float radius)
+    {
+        Destroy(_fixedJoint);
+        transform.SetParent(null);
+
+        _rbWreckage.AddExplosionForce(forese, positionExplosion, radius);
+
+        enabled = false;
+        Destroy(gameObject, 2);
     }
 }

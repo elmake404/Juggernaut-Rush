@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
             return Min + (_difference * Amout);
         }
     }
-    private Vector3 _startTouchPos, _currentPosPlayer, _targetPosPlayer;
+    private Vector3 _startTouchPos, _currentPosPlayer, _targetPosPlayer,_startPosPlayer;
     private Camera _cam;
     [SerializeField]
     private PlayerLife _playerLife;
@@ -27,14 +27,14 @@ public class PlayerMove : MonoBehaviour
     private List<float> _ListPositivBost = new List<float>();
     private List<float> _ListNegativBost = new List<float>();
 
-    private float _amoutRage { get { return _playerLife.GetAmoutRage(); } }
+    private float _amoutRage 
+    { get { return _playerLife.GetAmoutRage(); } }
+    [SerializeField]
+    private float _horizontalLimit;
 
-    private void Awake()
-    {
-
-    }
     private void Start()
     {
+        _startPosPlayer = transform.position;
         _targetPosPlayer = transform.position;
         _cam = Camera.main;
     }
@@ -77,12 +77,13 @@ public class PlayerMove : MonoBehaviour
         if (GameStage.IsGameFlowe)
         {
             Vector3 PosX = transform.position;
-            PosX.x = _targetPosPlayer.x;
+            PosX.x = CheckLimmit(_targetPosPlayer);
             transform.position = Vector3.MoveTowards(transform.position, PosX, GetSpeed(_lateralSpeed));
 
             transform.Translate(Vector3.forward * GetSpeed(_runningSpeed));
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.parent!=null)
@@ -94,6 +95,18 @@ public class PlayerMove : MonoBehaviour
                 StartCoroutine(Buff(inspector.Bonus, inspector.TimeOfAction));
             }
         }
+    }
+    private float CheckLimmit(Vector3 target)
+    {
+        if (target.x >_startPosPlayer.x+_horizontalLimit)
+        {
+            target.x = _startPosPlayer.x + _horizontalLimit;
+        }
+        else if (target.x <_startPosPlayer.x-_horizontalLimit)
+        {
+            target.x = _startPosPlayer.x - _horizontalLimit;
+        }
+        return target.x;
     }
     private IEnumerator Buff(float Procent,float time)
     {
@@ -110,7 +123,12 @@ public class PlayerMove : MonoBehaviour
             _ListNegativBost.Remove(Procent);
         }
     }
-    private float GetSpeed(MinMaxFalot Speed)
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(transform.position- Vector3.right*_horizontalLimit,transform.position+Vector3.right*_horizontalLimit);
+    }
+    public float GetSpeed(MinMaxFalot Speed)
     {
         float negative = Speed.GetSpeed(_amoutRage);
         for (int i = 0; i < _ListNegativBost.Count; i++)
@@ -147,4 +165,5 @@ public class PlayerMove : MonoBehaviour
         return _amoutRage + (negative + positive);
 
     }
+    
 }
