@@ -220,7 +220,7 @@ MonoBehaviour:
   _meshMaterial: {fileID: 2100000, guid: 1c3052e572dfa504eb95cd86406834e8, type: 2}
   _colorRage: {r: 1, g: 0, b: 0, a: 1}
   _colorOfCalm: {r: 1, g: 1, b: 1, a: 1}
-  _timeRage: 7
+  _timeRage: 5
 --- !u!1001 &231361513402878398
 PrefabInstance:
   m_ObjectHideFlags: 0
