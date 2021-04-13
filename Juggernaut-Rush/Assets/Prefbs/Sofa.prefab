@@ -98,6 +98,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SOFAModeles
       objectReference: {fileID: 0}
+    - target: {fileID: 8120988186329777870, guid: 16ebcaffcbcfb204b97df78bad157475,
+        type: 3}
+      propertyPath: _percentagofRageRecovery
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16ebcaffcbcfb204b97df78bad157475, type: 3}
 --- !u!4 &7536998562034796742 stripped

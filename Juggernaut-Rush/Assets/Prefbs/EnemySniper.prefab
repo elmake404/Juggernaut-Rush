@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallWreckage: {fileID: 1709756657271390923}
-  _percentagofRageRecovery: 100
+  _percentagofRageRecovery: 30
   _stressLevel: 0
   _torso: {fileID: 1709756657271358499}
   _shotPos: {fileID: 5894631519641487449}
