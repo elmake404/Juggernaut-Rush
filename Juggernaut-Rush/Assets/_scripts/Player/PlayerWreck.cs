@@ -19,14 +19,20 @@ public class PlayerWreck : MonoBehaviour
         {
             wreckage.PushWreckage((wreckage.transform.position - transform.position).normalized, collision.contacts[0].point, _impactStrength);
         }
+        if (collision.gameObject.layer == 9)
+        {
+            var wreck = collision.collider.GetComponent<Wreck>();
+            OnWreck?.Invoke(wreck.StressLevel);
+
+            wreck.PlayParticle(collision.contacts[0].point,-transform.forward);
+            Destroy(collision.collider);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
         var wall = other.GetComponent<WholeObj>();
         if (wall != null)
         {
-            OnWreck?.Invoke(wall.StressLevel);
-
             _playerLife.RestoringRage(wall.PercentagofRageRecovery);
             wall.ActivationWallWreckage();
         }
