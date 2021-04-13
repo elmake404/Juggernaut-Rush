@@ -108,9 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc36b0f5a8832e34a8db3e80777cd582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bonus: 20
-  _timeOfAction: 2
+  _bonus: -50
+  _timeOfAction: 1
   _animator: {fileID: 4524662733641490658}
+  _particle: {fileID: 0}
 --- !u!1001 &4319699385901730755
 PrefabInstance:
   m_ObjectHideFlags: 0

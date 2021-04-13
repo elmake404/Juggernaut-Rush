@@ -36,7 +36,7 @@ Transform:
   - {fileID: 1709756657271234229}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!136 &7590016774885596119
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -81,6 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _wallWreckage: {fileID: 1709756657271390923}
   _percentagofRageRecovery: 100
+  _stressLevel: 0
   _torso: {fileID: 1709756657271358499}
   _shotPos: {fileID: 5894631519641487449}
   _bullet: {fileID: 7872356520489850602, guid: 132c21366a9e0e847923902d91368805, type: 3}
@@ -88,8 +89,8 @@ MonoBehaviour:
     FlightSpeed: 0.7
     TimeLife: 1
     DamagePercentage: -25
-  _pushForce: 10000
-  _delayTimeBeforeShot: 0.5
+  _pushForce: 7500
+  _delayTimeBeforeShot: 1.5
   _rotationSpeed: 0.5
   _isFollowThePlayer: 0
 --- !u!1 &9966241654120529
