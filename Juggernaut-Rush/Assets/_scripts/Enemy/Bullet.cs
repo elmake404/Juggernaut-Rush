@@ -22,8 +22,13 @@ public class Bullet : MonoBehaviour
         if (other.transform.parent != null)
             if (other.transform.parent.gameObject == PlayerLife.Instance.gameObject)
             {
+                Debug.Log(1);
                 PlayerLife.Instance.RestoringRage(_characteristics.DamagePercentage);
-                _particle.transform.SetParent(null);
+                if (_particle!=null)
+                {
+                    _particle.transform.SetParent(null);
+                    _particle.Play();
+                }
                 Destroy(_particle, 2);
                 Destroy(gameObject);
             }
