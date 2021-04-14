@@ -140,7 +140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _wallWreckage: {fileID: 1928903703328249431}
   _percentagofRageRecovery: 25
-  _stressLevel: 0
 --- !u!1001 &5311518659928020004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -402,6 +401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6398419670791424477, guid: ef0b6632b22b1964e8571badc36348be,
+        type: 3}
+      propertyPath: _stressLevel
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6414886233340425263, guid: ef0b6632b22b1964e8571badc36348be,
         type: 3}

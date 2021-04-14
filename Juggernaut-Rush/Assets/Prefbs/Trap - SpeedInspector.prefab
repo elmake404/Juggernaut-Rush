@@ -4812,25 +4812,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!95 &4524662733641490658
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5572926101207712160}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 49010d8cd4cdb664582ce6549ae6d31e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5974982525012538253
 GameObject:
   m_ObjectHideFlags: 0
@@ -4923,7 +4904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bonus: -50
   _timeOfAction: 1
-  _animator: {fileID: 4524662733641490658}
+  _animator: {fileID: 7849755309005361350}
   _particle: {fileID: 6787556488137819033}
 --- !u!1001 &4319699385901730755
 PrefabInstance:
@@ -5007,6 +4988,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap
       objectReference: {fileID: 0}
+    - target: {fileID: 6277254172926876421, guid: d6eb8660b00a8dd41ba450efbbbc852e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277254172926876421, guid: d6eb8660b00a8dd41ba450efbbbc852e,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 49010d8cd4cdb664582ce6549ae6d31e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6eb8660b00a8dd41ba450efbbbc852e, type: 3}
 --- !u!4 &4336025143698146092 stripped
@@ -5015,9 +5006,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4319699385901730755}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5572926101207712160 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8549421399307471459, guid: d6eb8660b00a8dd41ba450efbbbc852e,
+--- !u!95 &7849755309005361350 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6277254172926876421, guid: d6eb8660b00a8dd41ba450efbbbc852e,
     type: 3}
   m_PrefabInstance: {fileID: 4319699385901730755}
   m_PrefabAsset: {fileID: 0}

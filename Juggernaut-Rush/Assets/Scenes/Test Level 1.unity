@@ -4670,7 +4670,7 @@ PrefabInstance:
     - target: {fileID: 4828097698505455442, guid: 1065a051284f6be44b7d81b30555135a,
         type: 3}
       propertyPath: TraumaExponent
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1065a051284f6be44b7d81b30555135a, type: 3}
@@ -7539,11 +7539,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4524662733641490658, guid: a3bc3539d21bb0949960f28085dd41c3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5974982526115931240, guid: a3bc3539d21bb0949960f28085dd41c3,
         type: 3}
       propertyPath: m_Name
       value: SpeedInspector
       objectReference: {fileID: 0}
+    - target: {fileID: 5974982526115931242, guid: a3bc3539d21bb0949960f28085dd41c3,
+        type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 1945106706}
     - target: {fileID: 5974982526115931243, guid: a3bc3539d21bb0949960f28085dd41c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7598,6 +7608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849755309005361350, guid: a3bc3539d21bb0949960f28085dd41c3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bc3539d21bb0949960f28085dd41c3, type: 3}
@@ -9831,6 +9846,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2841751741686815012, guid: 868a15c75d5b263498ec1e6a9093e282,
     type: 3}
   m_PrefabInstance: {fileID: 601178001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1945106706 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7849755309005361350, guid: a3bc3539d21bb0949960f28085dd41c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1524330331}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1974800109 stripped
 Transform:
