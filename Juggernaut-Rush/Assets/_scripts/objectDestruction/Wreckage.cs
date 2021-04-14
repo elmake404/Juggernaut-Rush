@@ -42,7 +42,7 @@ public class Wreckage : MonoBehaviour
         Destroy(_fixedJoint);
         transform.SetParent(null);
 
-        _rbWreckage.AddExplosionForce(forese, positionExplosion, radius);
+        _rbWreckage.AddExplosionForce(forese, positionExplosion, radius,0,ForceMode.Acceleration);
 
         enabled = false;
         Destroy(gameObject, 2);
