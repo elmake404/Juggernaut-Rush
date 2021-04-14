@@ -13,28 +13,35 @@ public class Barrier : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        var wall = other.GetComponent<WholeObj>();
-
-        if (wall != null)
-        {
-            wall.ActivationWallWreckage();
-
-            Collider[] colliders = Physics.OverlapSphere(transform.position, _radius);
-            foreach (var item in colliders)
+        if (other.transform.parent != null)
+            if (other.transform.parent.gameObject == PlayerLife.Instance.gameObject)
             {
-                var wreckage = item.GetComponent<Wreckage>();
-                if (wreckage != null)
+                Collider[] colliders = Physics.OverlapSphere(transform.position, _radius);
+                foreach (var item in colliders)
                 {
-                    wreckage.Explosion(_forceExplosion, transform.position, _radius);
+                    var wall = item.GetComponent<WholeObj>();
+                    if (wall!=null)
+                    {
+                        wall.ActivationWallWreckage();
+                    }
                 }
+                colliders = Physics.OverlapSphere(transform.position, _radius);
+                foreach (var item in colliders)
+                {
+                    var wreckage = item.GetComponent<Wreckage>();
+                    if (wreckage != null)
+                    {
+                        wreckage.Explosion(_forceExplosion, transform.position, _radius);
+                    }
+                }
+                _particle.Play();
+                _particle.transform.SetParent(null);
+                //Destroy(_particle, 1);
+
+                Destroy(gameObject);
+
             }
-            _particle.Play();
-            _particle.transform.SetParent(null);
-            //Destroy(_particle, 1);
 
-            Destroy(gameObject);
-
-        }
     }
     private IEnumerator MovingBarrile()
     {

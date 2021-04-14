@@ -7,8 +7,6 @@ public class PlayerWreck : MonoBehaviour
     [SerializeField]
     private PlayerLife _playerLife;
     [SerializeField]
-    private PlayerMove _playerMove;
-    [SerializeField]
     private float _impactStrength;
 
     public delegate void StressTransmitter(float stress);
@@ -30,10 +28,6 @@ public class PlayerWreck : MonoBehaviour
             wreck.PlayParticle(collision.contacts[0].point,-transform.forward);
             Destroy(collision.collider);
         }
-        //if (collision.collider.tag == "Barrel")
-        //{
-        //   collision.collider.GetComponent<Barrier>().StartMoving(_playerMove.GetSpeed);
-        //}
     }
     private void OnTriggerEnter(Collider other)
     {
