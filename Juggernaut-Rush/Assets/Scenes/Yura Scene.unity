@@ -7675,6 +7675,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 27.188688
       objectReference: {fileID: 0}
+    - target: {fileID: 1264507940233038634, guid: e7f0b91e23bec664fb51b1cd9f4db25c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 170.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2628599439663170619, guid: e7f0b91e23bec664fb51b1cd9f4db25c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15626,6 +15631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrier_barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 1418801226764146, guid: e688923abbe424e1595faff5b08f0b97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4414657141912972, guid: e688923abbe424e1595faff5b08f0b97, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.3
@@ -21436,7 +21445,7 @@ PrefabInstance:
     - target: {fileID: 5974982526115931240, guid: a3bc3539d21bb0949960f28085dd41c3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5974982526115931242, guid: a3bc3539d21bb0949960f28085dd41c3,
         type: 3}

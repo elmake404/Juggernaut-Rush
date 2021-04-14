@@ -19,16 +19,13 @@ public class PlayerMove : MonoBehaviour
         }
     }
     private Vector3 _startTouchPos, _currentPosPlayer, _targetPosPlayer,_startPosPlayer;
+    private List<float> _ListPositivBost = new List<float>();
+    private List<float> _ListNegativBost = new List<float>();
     private Camera _cam;
     [SerializeField]
     private PlayerLife _playerLife;
     [SerializeField]
     private float _lateralSpeed, _runningSpeed;
-    private List<float> _ListPositivBost = new List<float>();
-    private List<float> _ListNegativBost = new List<float>();
-
-    private float _amoutRage 
-    { get { return _playerLife.GetAmoutRage(); } }
     [SerializeField]
     private float _horizontalLimit;
 
@@ -40,7 +37,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void Update()
     {
-        if (TouchUtility.TouchCount > 0 && GameStage.IsGameFlowe)
+        if (TouchUtility.TouchCount > 0 && PossibleToRun())
         {
             Touch touch = TouchUtility.GetTouch(0);
 
@@ -74,7 +71,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (GameStage.IsGameFlowe)
+        if (PossibleToRun())
         {
             Vector3 PosX = transform.position;
             PosX.x = CheckLimmit(_targetPosPlayer);
@@ -146,6 +143,7 @@ public class PlayerMove : MonoBehaviour
 
         return Speed+(negative+positive);
     }
+    public bool PossibleToRun() => (PlayerLife.IsGetAngry && GameStage.IsGameFlowe);
     public float GetAmoutSpeed()
     {
         float negative = 1;
@@ -165,5 +163,6 @@ public class PlayerMove : MonoBehaviour
         return 1 + (negative + positive);
 
     }
+    
     
 }

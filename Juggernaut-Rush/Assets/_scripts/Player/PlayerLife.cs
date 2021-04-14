@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerLife : MonoBehaviour
 {
     public static PlayerLife Instance;
+    public static bool IsGetAngry;
 
     private List<GameObject> _listFloor = new List<GameObject>();
     [SerializeField]
@@ -35,14 +36,23 @@ public class PlayerLife : MonoBehaviour
     }
     private void Start()
     {
-        _timerRage = _timeRage;
-        _meshMaterial.color = _colorRage;
+        if (IsGetAngry)
+        {
+            _timerRage = _timeRage;
+            _meshMaterial.color = _colorRage;
+        }
+        else
+        {
+            _meshMaterial.color = _colorOfCalm;
+        }
+
         _differenceColor = _colorOfCalm - _colorRage;
     }
     private void FixedUpdate()
     {
         if (GameStage.IsGameFlowe)
         {
+            if(IsGetAngry)
             if (_timerRage > 0)
             {
                 _animator.speed = _playerMove.GetAmoutSpeed();
@@ -71,9 +81,10 @@ public class PlayerLife : MonoBehaviour
 
         if (other.tag == "Finish")
         {
-            _animator.SetBool("Win",true);
-            _animator.SetBool("Run",false);
+            _animator.SetBool("Win", true);
+            _animator.SetBool("Run", false);
             GameStage.Instance.ChangeStage(Stage.WinGame);
+            IsGetAngry = false;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -91,7 +102,16 @@ public class PlayerLife : MonoBehaviour
     }
     private void StartAnimationRun()
     {
-        _animator.SetBool("Run", true);
+        if (IsGetAngry)
+        {
+            _animator.SetBool("Run", true);
+        }
+        else
+        {
+            _animator.SetBool("GetAngry", true);
+            StartCoroutine(Angry());
+        }
+
         GameStageEvent.StartLevel -= StartAnimationRun;
     }
     private void GameOver()
@@ -102,7 +122,21 @@ public class PlayerLife : MonoBehaviour
 
         GameStage.Instance.ChangeStage(Stage.LostGame);
     }
+    private IEnumerator Angry()
+    {
+        float timeToRage = 1.6f;
+        //float addRage = 1.66f/ Time.fixedDeltaTime;
+        while (timeToRage>0)
+        {
+            timeToRage -= Time.fixedDeltaTime;
+            _timerRage = Mathf.Lerp(_timerRage,_timeRage,0.3f);
+            //_timerRage= _timeRage*(1f-(timeToRage/1.6f));
+            yield return new WaitForSeconds(Time.fixedDeltaTime);
+        }
+        IsGetAngry = true;
+        _animator.SetBool("Run", true);
 
+    }
     public float GetAmoutRage() => (_timerRage / _timeRage);
     public void RestoringRage(float procent)
     {
