@@ -23,7 +23,6 @@ public class Bullet : MonoBehaviour
             if (other.transform.parent.gameObject == PlayerLife.Instance.gameObject)
             {
                 PlayerLife.Instance.RestoringRage(_characteristics.DamagePercentage);
-                Debug.Log(gameObject.GetHashCode());
                 if (_particle!=null)
                 {
                     _particle.transform.SetParent(null);

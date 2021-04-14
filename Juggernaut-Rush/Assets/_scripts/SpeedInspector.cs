@@ -15,7 +15,6 @@ public class SpeedInspector : MonoBehaviour
 
     public void Act()
     {
-
         if (_animator != null)
             _animator.SetBool("Act", true);
         if (_particle != null)
