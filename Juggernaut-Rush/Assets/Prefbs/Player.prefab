@@ -197,7 +197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerLife: {fileID: 2316373548210243520}
-  _playerMove: {fileID: 0}
   _impactStrength: 750
 --- !u!114 &2316373548210243520
 MonoBehaviour:
