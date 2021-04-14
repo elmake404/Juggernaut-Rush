@@ -4989,16 +4989,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowSpeedUP - SpeedInspector 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5974982526115931242, guid: 8a9d2f1b82680d24297a89b14eda2221,
-        type: 3}
-      propertyPath: _bonus
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5974982526115931242, guid: 8a9d2f1b82680d24297a89b14eda2221,
-        type: 3}
-      propertyPath: _timeOfAction
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 5974982526115931243, guid: 8a9d2f1b82680d24297a89b14eda2221,
         type: 3}
       propertyPath: m_LocalPosition.x
