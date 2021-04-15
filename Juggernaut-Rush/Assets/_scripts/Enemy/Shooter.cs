@@ -5,6 +5,8 @@ using UnityEngine;
 public class Shooter : Wreckage
 {
     [SerializeField]
+    private Animator _animator;
+    [SerializeField]
     private Transform _ragdoll, _shotPos;
     [SerializeField]
     private Bullet _bullet;
@@ -49,8 +51,18 @@ public class Shooter : Wreckage
             yield return new WaitForSeconds(_delayTimeBeforeShot);
         }
     }
+    private IEnumerator ActivationAnimation(string parameter)
+    {
+        _animator.SetBool(parameter, true);
+        yield return new WaitForSeconds(0.1f);
+        _animator.SetBool(parameter, false);
+    }
     private void Shot()
     {
+        if (_animator!=null)
+        {
+            StartCoroutine(ActivationAnimation("Shot"));
+        }
         Bullet bullet = Instantiate(_bullet, _shotPos.position, _shotPos.rotation);
         bullet.Initialization(_bulletCharacteristics);
     }
