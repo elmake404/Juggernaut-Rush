@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particle: {fileID: 5795281310278211780}
-  _radius: 5
-  _forceExplosion: 70000
+  _radius: 10
+  _forceExplosion: 5000
 --- !u!54 &3555158017229291228
 Rigidbody:
   m_ObjectHideFlags: 0
