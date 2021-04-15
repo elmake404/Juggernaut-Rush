@@ -5709,11 +5709,6 @@ PrefabInstance:
       propertyPath: _isFollowThePlayer
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6882990137791432552, guid: 0227e8390ebaf514384c12166e724132,
-        type: 3}
-      propertyPath: _percentagofRageRecovery
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 7590016774885596119, guid: 0227e8390ebaf514384c12166e724132,
         type: 3}
       propertyPath: m_IsTrigger
