@@ -9,10 +9,8 @@ public class CanvasManager : MonoBehaviour
     [SerializeField]
     private GameObject _menuUI, _inGameUI, _wimIU, _lostUI;
     [SerializeField]
-    private Image _rageBar;
+    private Image _rageBar,_levelBar;
     private PlayerLife _playerLife;
-
-    private float _amountRage;
 
     private void Start()
     {

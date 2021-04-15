@@ -5523,7 +5523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9608645121721928, guid: 0227e8390ebaf514384c12166e724132, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9608645121721930, guid: 0227e8390ebaf514384c12166e724132, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5531,7 +5531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9608645121721930, guid: 0227e8390ebaf514384c12166e724132, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.11557579
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 9608645121721930, guid: 0227e8390ebaf514384c12166e724132, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5708,6 +5708,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _isFollowThePlayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7590016774885596119, guid: 0227e8390ebaf514384c12166e724132,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912142440092509056, guid: 0227e8390ebaf514384c12166e724132,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0227e8390ebaf514384c12166e724132, type: 3}

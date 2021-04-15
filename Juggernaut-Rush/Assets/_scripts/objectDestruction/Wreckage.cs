@@ -5,7 +5,7 @@ using UnityEngine;
 public class Wreckage : MonoBehaviour
 {
     [SerializeField]
-    private Rigidbody _rbWreckage;
+    protected Rigidbody _rbWreckage;
     [SerializeField]
     private FixedJoint _fixedJoint;
     [SerializeField]
@@ -28,7 +28,7 @@ public class Wreckage : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-    public void PushWreckage(Vector3 direction,Vector3 contactPoint,float forse)
+    public virtual void PushWreckage(Vector3 direction,Vector3 contactPoint,float forse)
     {
         ////
         #region crutch
