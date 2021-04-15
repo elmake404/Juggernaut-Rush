@@ -97,6 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8472025493799254706}
   _fixedJoint: {fileID: 2829167548594324016}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &8472025493799254706
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -238,6 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1978460150025118836}
   _fixedJoint: {fileID: 3495628316388142462}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &1978460150025118836
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -379,6 +383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 5531629273331030924}
   _fixedJoint: {fileID: 6845846874412729298}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &5531629273331030924
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -520,6 +526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 2777285065683605703}
   _fixedJoint: {fileID: 4248684070798617070}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &2777285065683605703
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -661,6 +669,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 3148115952693765350}
   _fixedJoint: {fileID: 1598115505989575486}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &3148115952693765350
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -802,6 +812,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1938204308076686180}
   _fixedJoint: {fileID: 987093872335691419}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &1938204308076686180
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -943,6 +955,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 2752186664669648196}
   _fixedJoint: {fileID: 7828435631565132764}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &2752186664669648196
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1084,6 +1098,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4523344040543716271}
   _fixedJoint: {fileID: 1535083917640633040}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &4523344040543716271
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1225,6 +1241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1119540624378954927}
   _fixedJoint: {fileID: 8089909108370574935}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &1119540624378954927
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1366,6 +1384,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 7947821611248195889}
   _fixedJoint: {fileID: 9109893295214197677}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &7947821611248195889
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1507,6 +1527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8467452054778200648}
   _fixedJoint: {fileID: 8137380518695314878}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &8467452054778200648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1648,6 +1670,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6224356394580549855}
   _fixedJoint: {fileID: 7116389255220486977}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &6224356394580549855
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1789,6 +1813,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1386790411953768792}
   _fixedJoint: {fileID: 8629991256799916630}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &1386790411953768792
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1930,6 +1956,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4915406033672838009}
   _fixedJoint: {fileID: 2432353792404834902}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &4915406033672838009
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2071,6 +2099,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 187327389260658854}
   _fixedJoint: {fileID: 5585336467213366456}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &187327389260658854
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2212,6 +2242,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 470929765557943568}
   _fixedJoint: {fileID: 4159328701852862219}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &470929765557943568
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2353,6 +2385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6844666296727407111}
   _fixedJoint: {fileID: 2307754954557086163}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &6844666296727407111
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2494,6 +2528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 5417002535394320624}
   _fixedJoint: {fileID: 6481043701351167055}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &5417002535394320624
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2635,6 +2671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4274049433717665728}
   _fixedJoint: {fileID: 4428736522713656018}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &4274049433717665728
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2776,6 +2814,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 7132546265465868799}
   _fixedJoint: {fileID: 3534194334882516693}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &7132546265465868799
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2917,6 +2957,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 2408967675683069097}
   _fixedJoint: {fileID: 4726252870282152456}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &2408967675683069097
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3058,6 +3100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 540138440021148353}
   _fixedJoint: {fileID: 8643211176722561369}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &540138440021148353
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3199,6 +3243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 2033007123850054959}
   _fixedJoint: {fileID: 3978181427754149914}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &2033007123850054959
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3340,6 +3386,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 809699533325554888}
   _fixedJoint: {fileID: 7034508059737491627}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &809699533325554888
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3481,6 +3529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6219255407406214464}
   _fixedJoint: {fileID: 7937970228260250212}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &6219255407406214464
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3622,6 +3672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1363445789712804291}
   _fixedJoint: {fileID: 4034046243913495499}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &1363445789712804291
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3763,6 +3815,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8702488543427068599}
   _fixedJoint: {fileID: 6956725096641574224}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &8702488543427068599
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3904,6 +3958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8414739896561611743}
   _fixedJoint: {fileID: 782736895178087450}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &8414739896561611743
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4045,6 +4101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 763181645692788953}
   _fixedJoint: {fileID: 2719592927048770965}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &763181645692788953
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4186,6 +4244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6682231409883681746}
   _fixedJoint: {fileID: 8556114170073154696}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &6682231409883681746
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4327,6 +4387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 2361264262161720165}
   _fixedJoint: {fileID: 8220186869910625935}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &2361264262161720165
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4531,6 +4593,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 359219268090402550}
   _fixedJoint: {fileID: 5296613265857579386}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &359219268090402550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4672,6 +4736,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 2237146262669160277}
   _fixedJoint: {fileID: 7042719696336907886}
+  _stressLevel: 0.0025
+  _percentagofRageRecovery: 0.5
 --- !u!54 &2237146262669160277
 Rigidbody:
   m_ObjectHideFlags: 0
