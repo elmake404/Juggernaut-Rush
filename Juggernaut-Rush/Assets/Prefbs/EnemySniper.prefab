@@ -697,6 +697,16 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0.011315126
       objectReference: {fileID: 0}
+    - target: {fileID: 5212809563055873686, guid: 46ae79f86d14d564894c2d6932a67dad,
+        type: 3}
+      propertyPath: m_Bones.Array.data[46]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212809563055873686, guid: 46ae79f86d14d564894c2d6932a67dad,
+        type: 3}
+      propertyPath: m_Bones.Array.data[47]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46ae79f86d14d564894c2d6932a67dad, type: 3}
 --- !u!4 &1709756657271234229 stripped

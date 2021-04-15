@@ -26,14 +26,17 @@ public class Barrier : MonoBehaviour
                     }
                 }
                 colliders = Physics.OverlapSphere(transform.position, _radius);
+                float addRage = 0;
                 foreach (var item in colliders)
                 {
                     var wreckage = item.GetComponent<Wreckage>();
                     if (wreckage != null)
                     {
                         wreckage.Explosion(_forceExplosion, transform.position, _radius);
+                        addRage += wreckage.PercentagofRageRecovery;
                     }
                 }
+                PlayerLife.Instance.RestoringRage(addRage);
                 _particle.Play();
                 _particle.transform.SetParent(null);
                 //Destroy(_particle, 1);

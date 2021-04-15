@@ -226,7 +226,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2598796519878559229, guid: d85679ef88816b64abf07a4bf9f8714f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d85679ef88816b64abf07a4bf9f8714f, type: 3}
 --- !u!1 &846729206519343017 stripped
 GameObject:
