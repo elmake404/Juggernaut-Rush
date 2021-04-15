@@ -5709,11 +5709,6 @@ PrefabInstance:
       propertyPath: _isFollowThePlayer
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7590016774885596119, guid: 0227e8390ebaf514384c12166e724132,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7912142440092509056, guid: 0227e8390ebaf514384c12166e724132,
         type: 3}
       propertyPath: m_IsKinematic
@@ -15643,7 +15638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1418801226764146, guid: e688923abbe424e1595faff5b08f0b97, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4414657141912972, guid: e688923abbe424e1595faff5b08f0b97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15655,7 +15650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4414657141912972, guid: e688923abbe424e1595faff5b08f0b97, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.1
+      value: 63.45
       objectReference: {fileID: 0}
     - target: {fileID: 4414657141912972, guid: e688923abbe424e1595faff5b08f0b97, type: 3}
       propertyPath: m_LocalRotation.x

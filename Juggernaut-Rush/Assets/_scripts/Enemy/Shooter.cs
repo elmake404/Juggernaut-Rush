@@ -61,4 +61,12 @@ public class Shooter : Wreckage
         _rbWreckage.AddForce(direction * forse*_foreseMultiplier, ForceMode.Acceleration);
         Destroy(gameObject);
     }
+    public override void Explosion(float forese, Vector3 positionExplosion, float radius)
+    {
+        _ragdoll.gameObject.SetActive(true);
+        _ragdoll.parent.SetParent(null);
+
+        _rbWreckage.AddExplosionForce(forese * _foreseMultiplier/2, positionExplosion, radius, 0, ForceMode.Acceleration);
+        Destroy(gameObject);
+    }
 }

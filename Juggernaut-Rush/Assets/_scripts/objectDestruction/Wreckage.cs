@@ -50,7 +50,7 @@ public class Wreckage : MonoBehaviour
         _rbWreckage = GetComponent<Rigidbody>();
         _fixedJoint = GetComponent<FixedJoint>();
     }
-    public void Explosion(float forese,Vector3 positionExplosion,float radius)
+    public virtual void Explosion(float forese,Vector3 positionExplosion,float radius)
     {
         Destroy(_fixedJoint);
         transform.SetParent(null);
