@@ -80,8 +80,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallWreckage: {fileID: 1709756657271390923}
-  _percentagofRageRecovery: 30
-  _stressLevel: 0
   _torso: {fileID: 1709756657271358499}
   _shotPos: {fileID: 5894631519641487449}
   _bullet: {fileID: 7872356520489850602, guid: 132c21366a9e0e847923902d91368805, type: 3}
@@ -89,7 +87,7 @@ MonoBehaviour:
     FlightSpeed: 0.7
     TimeLife: 1
     DamagePercentage: -35
-  _pushForce: 7500
+  _pushForce: 10000
   _delayTimeBeforeShot: 1.5
   _rotationSpeed: 0.5
   _isFollowThePlayer: 0

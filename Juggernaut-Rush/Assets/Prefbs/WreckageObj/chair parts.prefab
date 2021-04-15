@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4b71208dba7c90d42999ff8195cb96c1, type: 2}
+  - {fileID: 2100000, guid: efd7c60ff98cc7c409275eefc6ddc1e2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,6 +110,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4957966679779404597}
   _fixedJoint: {fileID: 196885472694290584}
+  _stressLevel: 0.025
+  _percentagofRageRecovery: 1
 --- !u!54 &4957966679779404597
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -251,6 +253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4653862490255449045}
   _fixedJoint: {fileID: 1966409677923104012}
+  _stressLevel: 0.025
+  _percentagofRageRecovery: 1
 --- !u!54 &4653862490255449045
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -428,6 +432,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 5814969010355337175}
   _fixedJoint: {fileID: 5703727479153836524}
+  _stressLevel: 0.025
+  _percentagofRageRecovery: 1
 --- !u!54 &5814969010355337175
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -520,7 +526,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4b71208dba7c90d42999ff8195cb96c1, type: 2}
+  - {fileID: 2100000, guid: efd7c60ff98cc7c409275eefc6ddc1e2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -568,6 +574,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1853436177096552633}
   _fixedJoint: {fileID: 4138805225441586874}
+  _stressLevel: 0.025
+  _percentagofRageRecovery: 1
 --- !u!54 &1853436177096552633
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -709,6 +717,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6987540488242283748}
   _fixedJoint: {fileID: 3956133442924591147}
+  _stressLevel: 0.025
+  _percentagofRageRecovery: 1
 --- !u!54 &6987540488242283748
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -850,6 +860,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8480360413076981619}
   _fixedJoint: {fileID: 1605347303364355032}
+  _stressLevel: 0.025
+  _percentagofRageRecovery: 1
 --- !u!54 &8480360413076981619
 Rigidbody:
   m_ObjectHideFlags: 0
