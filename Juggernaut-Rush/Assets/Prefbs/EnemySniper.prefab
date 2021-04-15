@@ -63,9 +63,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &6882990137791432552
 MonoBehaviour:
@@ -79,17 +79,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97552af480916f6408c80ca6df8dd8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallWreckage: {fileID: 1709756657271390923}
-  _percentagofRageRecovery: 30
+  _rbWreckage: {fileID: 1709756657271358499}
+  _fixedJoint: {fileID: 0}
   _stressLevel: 0
-  _torso: {fileID: 1709756657271358499}
+  _percentagofRageRecovery: 30
+  _ragdoll: {fileID: 1709756657271234283}
   _shotPos: {fileID: 5894631519641487449}
   _bullet: {fileID: 7872356520489850602, guid: 132c21366a9e0e847923902d91368805, type: 3}
   _bulletCharacteristics:
     FlightSpeed: 0.7
     TimeLife: 1
     DamagePercentage: -35
-  _pushForce: 7500
+  _foreseMultiplier: 15
   _delayTimeBeforeShot: 1.5
   _rotationSpeed: 0.5
   _isFollowThePlayer: 0
@@ -704,9 +705,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6912418715806044431}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1709756657271390923 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5212809563050660804, guid: 46ae79f86d14d564894c2d6932a67dad,
+--- !u!4 &1709756657271234283 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5212809563050561508, guid: 46ae79f86d14d564894c2d6932a67dad,
     type: 3}
   m_PrefabInstance: {fileID: 6912418715806044431}
   m_PrefabAsset: {fileID: 0}

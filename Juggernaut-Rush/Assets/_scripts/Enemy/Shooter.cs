@@ -2,21 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooter : WholeObj
+public class Shooter : Wreckage
 {
     [SerializeField]
-    private Rigidbody _torso;
-    [SerializeField]
-    private Transform _shotPos;
+    private Transform _ragdoll, _shotPos;
     [SerializeField]
     private Bullet _bullet;
-    private Transform _target 
+    private Transform _target
     { get { return PlayerLife.Instance.transform; } }
     [SerializeField]
     private BulletCharacteristics _bulletCharacteristics;
 
     [SerializeField]
-    private float _pushForce, _delayTimeBeforeShot,_rotationSpeed;
+    private float _foreseMultiplier, _delayTimeBeforeShot, _rotationSpeed;
     [SerializeField]
     private bool _isFollowThePlayer;
     private void Awake()
@@ -36,7 +34,7 @@ public class Shooter : WholeObj
         posTarget.y = transform.position.y;
         Quaternion rotation = Quaternion.LookRotation(posTarget - transform.position);
 
-        transform.rotation = Quaternion.Slerp(transform.rotation,rotation, _rotationSpeed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _rotationSpeed);
     }
     private void StartShot()
     {
@@ -56,12 +54,11 @@ public class Shooter : WholeObj
         Bullet bullet = Instantiate(_bullet, _shotPos.position, _shotPos.rotation);
         bullet.Initialization(_bulletCharacteristics);
     }
-    public override void ActivationWallWreckage()
+    public override void PushWreckage(Vector3 direction, Vector3 contactPoint, float forse)
     {
-        _wallWreckage.SetActive(true);
-        _wallWreckage.transform.parent.SetParent(null);
-        Vector3 direction = transform.position- _target.transform.position ;
-        _torso.AddForce(direction.normalized* _pushForce, ForceMode.Acceleration);
+        _ragdoll.gameObject.SetActive(true);
+        _ragdoll.parent.SetParent(null);
+        _rbWreckage.AddForce(direction * forse*_foreseMultiplier, ForceMode.Acceleration);
         Destroy(gameObject);
     }
 }
