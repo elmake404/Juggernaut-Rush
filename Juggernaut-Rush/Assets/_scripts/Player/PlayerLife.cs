@@ -124,7 +124,7 @@ public class PlayerLife : MonoBehaviour
     }
     private IEnumerator Angry()
     {
-        float timeToRage = 1.6f;
+        float timeToRage = 1.5f;
         //float addRage = 1.66f/ Time.fixedDeltaTime;
         while (timeToRage>0)
         {
