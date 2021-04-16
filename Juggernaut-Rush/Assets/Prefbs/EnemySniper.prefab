@@ -91,7 +91,7 @@ MonoBehaviour:
     FlightSpeed: 0.7
     TimeLife: 1
     DamagePercentage: -35
-  _foreseMultiplier: 15
+  _foreseMultiplier: 7
   _delayTimeBeforeShot: 1.5
   _rotationSpeed: 0.5
   _isFollowThePlayer: 0

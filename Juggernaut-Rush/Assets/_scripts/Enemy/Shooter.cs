@@ -68,6 +68,12 @@ public class Shooter : Wreckage
     }
     public override void PushWreckage(Vector3 direction, Vector3 contactPoint, float forse)
     {
+        ////
+        #region crutch
+        direction.y /= 4;
+        direction.z *= 2;
+        #endregion
+
         _ragdoll.gameObject.SetActive(true);
         _ragdoll.parent.SetParent(null);
         _rbWreckage.AddForce(direction * forse*_foreseMultiplier, ForceMode.Acceleration);

@@ -213,6 +213,7 @@ MonoBehaviour:
   _animator: {fileID: 8261234277785098773}
   _rbMain: {fileID: 8963431280267053461}
   _meshMaterial: {fileID: 2100000, guid: 1c3052e572dfa504eb95cd86406834e8, type: 2}
+  _steem: {fileID: 7215636856530447454}
   _colorRage: {r: 1, g: 0, b: 0, a: 1}
   _colorOfCalm: {r: 1, g: 1, b: 1, a: 1}
   _timeRage: 6
@@ -923,6 +924,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7427684979177439720, guid: b2a6afd096a5ae4418bb95259d5068e3,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427733498733942860, guid: b2a6afd096a5ae4418bb95259d5068e3,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427787548209448868, guid: b2a6afd096a5ae4418bb95259d5068e3,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7428372505349711328, guid: b2a6afd096a5ae4418bb95259d5068e3,
         type: 3}
       propertyPath: lengthInSec
@@ -937,6 +953,16 @@ PrefabInstance:
         type: 3}
       propertyPath: looping
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428372505349711328, guid: b2a6afd096a5ae4418bb95259d5068e3,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428655251217007512, guid: b2a6afd096a5ae4418bb95259d5068e3,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7490139689031306646, guid: b2a6afd096a5ae4418bb95259d5068e3,
         type: 3}
@@ -1049,6 +1075,12 @@ GameObject:
 --- !u!4 &4960139315570024910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5179142317572057200, guid: b2a6afd096a5ae4418bb95259d5068e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 231361513402878398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7215636856530447454 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7428372505349711328, guid: b2a6afd096a5ae4418bb95259d5068e3,
     type: 3}
   m_PrefabInstance: {fileID: 231361513402878398}
   m_PrefabAsset: {fileID: 0}

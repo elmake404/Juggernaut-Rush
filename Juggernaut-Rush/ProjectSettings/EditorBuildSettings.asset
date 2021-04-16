@@ -4,4 +4,38 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ZeroSnese.unity
+    guid: e690de6faff5d6c45ac163b7b98e1b84
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 0.unity
+    guid: d27fca1637b2dc840a1a166be184c94f
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 1.unity
+    guid: 3c662f89d1bbf2c40a41cd6a34bf8575
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 2.unity
+    guid: 34284e8d37531ce40a7430b9578650b8
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 3.unity
+    guid: 80783143d1f1b78439e0cc9e12bd3246
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 4.unity
+    guid: d8061fe6f93d2a547a6d7602d22b5704
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 5.unity
+    guid: e2b1f596d9850b94c8b7ae1c71f4cb19
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 6.unity
+    guid: cd38fd040835e674e816625e90a93dda
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 7.unity
+    guid: d82d0d29af97ea744a56c528fab774c3
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 8.unity
+    guid: 7579ddb7bc0c9bc4f9bb50cbfab3fdd3
+  - enabled: 1
+    path: Assets/Scenes/_Levels/_ Level 9.unity
+    guid: b9a4987eeee392b42a38a46f281f785f
+  m_configObjects: {}

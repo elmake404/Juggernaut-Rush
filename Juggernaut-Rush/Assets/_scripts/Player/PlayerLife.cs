@@ -15,6 +15,8 @@ public class PlayerLife : MonoBehaviour
     [SerializeField]
     private Material _meshMaterial;
     private PlayerMove _playerMove;
+    [SerializeField]
+    private ParticleSystem _steem;
 
     [SerializeField]
     private Color _colorRage = Color.red, _colorOfCalm = Color.white;
@@ -52,18 +54,18 @@ public class PlayerLife : MonoBehaviour
     {
         if (GameStage.IsGameFlowe)
         {
-            if(IsGetAngry)
-            if (_timerRage > 0)
-            {
-                _animator.speed = _playerMove.GetAmoutSpeed();
-                _timerRage -= Time.deltaTime;
-            }
-            else
-            {
-                _animator.SetBool("Death", true);
-                _animator.SetBool("Run", false);
-                GameStage.Instance.ChangeStage(Stage.LostGame);
-            }
+            if (IsGetAngry)
+                if (_timerRage > 0)
+                {
+                    _animator.speed = _playerMove.GetAmoutSpeed();
+                    _timerRage -= Time.deltaTime;
+                }
+                else
+                {
+                    _animator.SetBool("Death", true);
+                    _animator.SetBool("Run", false);
+                    GameStage.Instance.ChangeStage(Stage.LostGame);
+                }
 
             _meshMaterial.color = _colorRage + (_differenceColor / 100) * ((_timeRage - _timerRage) / _timeRage * 100);
         }
@@ -79,11 +81,12 @@ public class PlayerLife : MonoBehaviour
             _listFloor.Add(other.gameObject);
         }
 
-        if (other.tag == "Finish")
+        if (other.gameObject == Finish.Instance.gameObject)
         {
             _animator.SetBool("Win", true);
             _animator.SetBool("Run", false);
             GameStage.Instance.ChangeStage(Stage.WinGame);
+           StartCoroutine( WinGame(Finish.Instance.GetPosJamp()));
             IsGetAngry = false;
         }
     }
@@ -104,6 +107,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (IsGetAngry)
         {
+            _steem.Play();
             _animator.SetBool("Run", true);
         }
         else
@@ -116,24 +120,48 @@ public class PlayerLife : MonoBehaviour
     }
     private void GameOver()
     {
+        _steem.Stop();
+
         _rbMain.constraints = RigidbodyConstraints.FreezeRotation;
         _rbMain.AddForce(Vector3.forward * 500, ForceMode.Acceleration);
         transform.GetChild(0).gameObject.layer = 8;
 
         GameStage.Instance.ChangeStage(Stage.LostGame);
     }
+    private IEnumerator WinGame(Transform jampDirection)
+    {
+        _steem.Stop();
+
+        yield return new WaitForSeconds(0.4f);
+        Vector3 PosJamp = jampDirection.position;
+        PosJamp.x = transform.position.x;
+        _rbMain.constraints = RigidbodyConstraints.FreezeRotation;
+        Vector3 fromTo = PosJamp - transform.position;
+        Vector3 from = new Vector3(fromTo.x, 0, fromTo.z);
+        jampDirection.rotation = Quaternion.LookRotation(from, Vector3.up);
+        jampDirection.Rotate(Vector3.right, -35);
+
+        float x = from.magnitude;
+        float y = fromTo.y;
+        float Angel = -35 * Mathf.PI / 180;
+
+        float v2 = ((20f * x * x) / (2 * (y - Mathf.Tan(Angel) * x) * Mathf.Pow(Mathf.Cos(Angel), 2)));
+        float v = Mathf.Sqrt(Mathf.Abs(v2));
+
+        _rbMain.velocity =jampDirection.forward * (v /*- (v / 10)*/);
+    }
     private IEnumerator Angry()
     {
         float timeToRage = 1.5f;
-        //float addRage = 1.66f/ Time.fixedDeltaTime;
-        while (timeToRage>0)
+        while (timeToRage > 0)
         {
             timeToRage -= Time.fixedDeltaTime;
-            _timerRage = Mathf.Lerp(_timerRage,_timeRage,0.3f);
-            //_timerRage= _timeRage*(1f-(timeToRage/1.6f));
+            _timerRage = Mathf.Lerp(_timerRage, _timeRage, 0.3f);
             yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
         IsGetAngry = true;
+        _steem.Play();
+
         _animator.SetBool("Run", true);
 
     }

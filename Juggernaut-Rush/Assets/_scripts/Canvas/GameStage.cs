@@ -6,9 +6,10 @@ public static class GameStageEvent
 {
     public delegate void Empty();
     public static event Empty StartLevel;
+    public static event Empty WinLevel;
     public static void InvokeStartLevel()
     {
-        StartLevel.Invoke();
+        StartLevel?.Invoke();
     }
 }
 public enum Stage { StartGame, StartLevel, WinGame, LostGame }
@@ -41,30 +42,42 @@ public class GameStage : MonoBehaviour
     public void ChangeStage(Stage stage)
     {
         StageGame = stage;
-        _canvasManager.GameStageWindow(StageGame);
 
         switch (stage)
         {
             case Stage.StartGame:
-
+                _canvasManager.GameStageWindow(StageGame);
                 _isGameStart = true;
                 break;
 
             case Stage.StartLevel:
 
+                _canvasManager.GameStageWindow(StageGame);
                 GameStageEvent.InvokeStartLevel();
                 IsGameFlowe = true;
                 break;
 
             case Stage.WinGame:
+                if (IsGameFlowe)
+                {
+                    _canvasManager.GameStageWindow(StageGame);
+                    PlayerPrefs.SetInt("Scenes", PlayerPrefs.GetInt("Scenes")+1);
+                    PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level") + 1);
 
-                IsGameFlowe = false;
-                //впиши сюда поднятие уровня и сцены 
+                    IsGameFlowe = false;
+                    //впиши сюда поднятие уровня и сцены 
+
+                }
                 break;
 
             case Stage.LostGame:
+                if (IsGameFlowe)
+                {
+                    _canvasManager.GameStageWindow(StageGame);
 
-                IsGameFlowe = false;
+                    IsGameFlowe = false;
+
+                }
                 break;
         }
 

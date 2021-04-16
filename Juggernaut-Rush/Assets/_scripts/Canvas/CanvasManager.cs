@@ -12,15 +12,21 @@ public class CanvasManager : MonoBehaviour
     private Image _rageBar, _levelBar;
     private PlayerLife _playerLife;
     private Transform _finishPos;
+    [SerializeField]
+    private Text _textLevelWin, _textLevelCurent, _textLevelTarget;
+
     private float _distens;
     private float _distensTraveled 
     { get { return _finishPos.position.z - _playerLife.transform.position.z; } }
 
     private void Start()
     {
+        _textLevelWin.text ="Level "+ PlayerPrefs.GetInt("Level").ToString();
+        _textLevelCurent.text = PlayerPrefs.GetInt("Level").ToString();
+        _textLevelTarget.text = (PlayerPrefs.GetInt("Level") +1).ToString();
         _playerLife = PlayerLife.Instance;
 
-        _finishPos = FindObjectOfType<Finish>().transform;
+        _finishPos = Finish.Instance.transform;
         _distens = _finishPos.position.z - _playerLife.transform.position.z-0.5f;
         _rageBar.fillAmount = 1;
     }
