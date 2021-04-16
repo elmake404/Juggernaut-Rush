@@ -61,7 +61,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b018d4066c45b564a96a058311296bba, type: 3}
-  - {fileID: 2100002, guid: b018d4066c45b564a96a058311296bba, type: 3}
+  - {fileID: 2100000, guid: 011ca4e5764195145a9a7eb9033d6999, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,7 +95,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallWreckage: {fileID: 5668016349286887088}
-  _percentagofRageRecovery: 10
 --- !u!65 &2227862689944673844
 BoxCollider:
   m_ObjectHideFlags: 0
