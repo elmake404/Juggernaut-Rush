@@ -39,7 +39,6 @@ public class Barrier : MonoBehaviour
                 PlayerLife.Instance.RestoringRage(addRage);
                 _particle.Play();
                 _particle.transform.SetParent(null);
-                //Destroy(_particle, 1);
 
                 Destroy(gameObject);
 
