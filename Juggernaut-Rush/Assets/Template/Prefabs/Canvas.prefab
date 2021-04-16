@@ -890,6 +890,7 @@ MonoBehaviour:
   _wimIU: {fileID: 1326874676435430}
   _lostUI: {fileID: 1401342752598832}
   _rageBar: {fileID: 4423600707285466958}
+  _levelBar: {fileID: 114592505259201384}
 --- !u!114 &2188399482116124601
 MonoBehaviour:
   m_ObjectHideFlags: 0

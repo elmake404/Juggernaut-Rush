@@ -9,17 +9,30 @@ public class CanvasManager : MonoBehaviour
     [SerializeField]
     private GameObject _menuUI, _inGameUI, _wimIU, _lostUI;
     [SerializeField]
-    private Image _rageBar,_levelBar;
+    private Image _rageBar, _levelBar;
     private PlayerLife _playerLife;
+    private Transform _finishPos;
+    private float _distens;
+    private float _distensTraveled 
+    { get { return _finishPos.position.z - _playerLife.transform.position.z; } }
 
     private void Start()
     {
+        _playerLife = PlayerLife.Instance;
+
+        _finishPos = FindObjectOfType<Finish>().transform;
+        _distens = _finishPos.position.z - _playerLife.transform.position.z-0.5f;
         _rageBar.fillAmount = 1;
-        _playerLife = FindObjectOfType<PlayerLife>();
     }
     private void FixedUpdate()
     {
         _rageBar.fillAmount = Mathf.LerpUnclamped(_rageBar.fillAmount, _playerLife.GetAmoutRage(), 0.1f);
+        AmoutDistensTraveled();
+    }
+    private void AmoutDistensTraveled()
+    {
+        float amoutDistens = 1 -_distensTraveled / _distens;
+        _levelBar.fillAmount = Mathf.Lerp(_levelBar.fillAmount,amoutDistens,0.7f);
     }
     public void GameStageWindow(Stage stageGame)
     {
@@ -39,6 +52,7 @@ public class CanvasManager : MonoBehaviour
 
             case Stage.WinGame:
 
+                _inGameUI.SetActive(false);
                 _wimIU.SetActive(true);
                 //впиши сюда поднятие уровня и сцены 
                 break;
@@ -49,4 +63,5 @@ public class CanvasManager : MonoBehaviour
                 break;
         }
     }
+
 }
