@@ -98,6 +98,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 2757513241555872787}
   _fixedJoint: {fileID: 6705288176830417880}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &2757513241555872787
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -240,6 +241,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 3572052856669971276}
   _fixedJoint: {fileID: 6791733593830094803}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &3572052856669971276
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -382,6 +384,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 4651127412365473180}
   _fixedJoint: {fileID: 3632623447211675852}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &4651127412365473180
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -524,6 +527,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 6106622685692905252}
   _fixedJoint: {fileID: 3075076402224914651}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &6106622685692905252
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -666,6 +670,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 7506619952078578513}
   _fixedJoint: {fileID: 3597522712470869700}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &7506619952078578513
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -808,6 +813,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 308050458210459889}
   _fixedJoint: {fileID: 63918288911120699}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &308050458210459889
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -950,6 +956,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 1673891670481563387}
   _fixedJoint: {fileID: 6571639252630136045}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &1673891670481563387
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1092,6 +1099,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 3469817762368888893}
   _fixedJoint: {fileID: 6006574735205380689}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &3469817762368888893
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1234,6 +1242,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 7501773055240417532}
   _fixedJoint: {fileID: 6259656919436640645}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &7501773055240417532
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1376,6 +1385,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 4557651719586121181}
   _fixedJoint: {fileID: 1037198416425352483}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &4557651719586121181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1518,6 +1528,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 1767397719036521718}
   _fixedJoint: {fileID: 8387187869307908432}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &1767397719036521718
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1660,6 +1671,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 3245052111552222407}
   _fixedJoint: {fileID: 3591426395788073374}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &3245052111552222407
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1802,6 +1814,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 6454024721674338681}
   _fixedJoint: {fileID: 122413819457748250}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &6454024721674338681
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1944,6 +1957,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 5694508473291887845}
   _fixedJoint: {fileID: 7718246488460747407}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &5694508473291887845
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2086,6 +2100,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 8062132315938565023}
   _fixedJoint: {fileID: 6213650874761730631}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &8062132315938565023
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2228,6 +2243,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 6674338230556617210}
   _fixedJoint: {fileID: 1340215695298151432}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &6674338230556617210
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2370,6 +2386,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 5638131916350529363}
   _fixedJoint: {fileID: 1840073769547278157}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &5638131916350529363
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2512,6 +2529,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 9045139547169948490}
   _fixedJoint: {fileID: 5377487076913985541}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &9045139547169948490
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2654,6 +2672,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 1157355678351668793}
   _fixedJoint: {fileID: 844163245616580438}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &1157355678351668793
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2796,6 +2815,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 1123030237114892477}
   _fixedJoint: {fileID: 8281484809487700912}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &1123030237114892477
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2938,6 +2958,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 8964423625331124482}
   _fixedJoint: {fileID: 4671828999765949531}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &8964423625331124482
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3080,6 +3101,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 2349911632669523426}
   _fixedJoint: {fileID: 2137042831191490242}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &2349911632669523426
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3222,6 +3244,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 8660880061928688910}
   _fixedJoint: {fileID: 4376863357443620003}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &8660880061928688910
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3364,6 +3387,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 6116084263037899212}
   _fixedJoint: {fileID: 6748026830228998309}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &6116084263037899212
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3506,6 +3530,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 7914816571192575821}
   _fixedJoint: {fileID: 6041761435477290260}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &7914816571192575821
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3648,6 +3673,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 9025401437308978104}
   _fixedJoint: {fileID: 3669254149656755695}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &9025401437308978104
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3790,6 +3816,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 2673610263814594276}
   _fixedJoint: {fileID: 1371085021336438245}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &2673610263814594276
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3932,6 +3959,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 7088416780814331514}
   _fixedJoint: {fileID: 8843997552502229706}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &7088416780814331514
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4074,6 +4102,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 6144822262669715332}
   _fixedJoint: {fileID: 7662389265821837179}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &6144822262669715332
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4216,6 +4245,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 3346016855000862217}
   _fixedJoint: {fileID: 6933754001089832594}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &3346016855000862217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4358,6 +4388,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 119509193153480707}
   _fixedJoint: {fileID: 233889544185266067}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &119509193153480707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4500,6 +4531,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 1601164110558305325}
   _fixedJoint: {fileID: 9049648189634011978}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &1601164110558305325
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4642,6 +4674,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 2879003605490001816}
   _fixedJoint: {fileID: 1524344268482780621}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &2879003605490001816
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4784,6 +4817,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 4654189625964148421}
   _fixedJoint: {fileID: 4793802431418560428}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &4654189625964148421
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4837,8 +4871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6357192656556054729}
-  - component: {fileID: 8121793870337948435}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: WallWreckage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4909,19 +4942,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8121793870337948435
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6013037393220633203}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0047274, y: 0.50272727, z: 0.0446723}
-  m_Center: {x: 0.002142191, y: -0.004520532, z: 0.0002825253}
 --- !u!1 &6096901400604803713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,6 +5040,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 3177885511573299185}
   _fixedJoint: {fileID: 2795293056771011914}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &3177885511573299185
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5162,6 +5183,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 546615065692307305}
   _fixedJoint: {fileID: 9109006493992956448}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &546615065692307305
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5304,6 +5326,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 4589744100532297833}
   _fixedJoint: {fileID: 2907635701462861948}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &4589744100532297833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5446,6 +5469,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 8816683766382357722}
   _fixedJoint: {fileID: 9064008610761597746}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &8816683766382357722
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5588,6 +5612,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 2535220834224637526}
   _fixedJoint: {fileID: 5217668493635265965}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &2535220834224637526
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5730,6 +5755,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 991173181353722804}
   _fixedJoint: {fileID: 7697494217332084878}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &991173181353722804
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5872,6 +5898,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 1718882901534498988}
   _fixedJoint: {fileID: 3852691513078451245}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &1718882901534498988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6014,6 +6041,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 6338315517994820896}
   _fixedJoint: {fileID: 8367207540911709782}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &6338315517994820896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6156,6 +6184,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 5704934588969169850}
   _fixedJoint: {fileID: 5803458879849728549}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &5704934588969169850
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6298,6 +6327,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 5995505247051894145}
   _fixedJoint: {fileID: 692630808946738577}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &5995505247051894145
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6440,6 +6470,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 2769941853780174586}
   _fixedJoint: {fileID: 8126540006547204368}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &2769941853780174586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6582,6 +6613,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 1387739835575193836}
   _fixedJoint: {fileID: 4379765612319952131}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &1387739835575193836
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6724,6 +6756,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 4140031225328674753}
   _fixedJoint: {fileID: 2900931637660721830}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &4140031225328674753
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6866,6 +6899,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 7618218090063421471}
   _fixedJoint: {fileID: 5893569204568784315}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &7618218090063421471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7008,6 +7042,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 6866729436351042416}
   _fixedJoint: {fileID: 8169011316494805661}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &6866729436351042416
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7150,6 +7185,7 @@ MonoBehaviour:
   _rbWreckage: {fileID: 6783801972567305720}
   _fixedJoint: {fileID: 4611181834039827681}
   _stressLevel: 0.01
+  _percentagofRageRecovery: 0
 --- !u!54 &6783801972567305720
 Rigidbody:
   m_ObjectHideFlags: 0
