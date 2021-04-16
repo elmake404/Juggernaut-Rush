@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9608645121721928}
-  m_LocalRotation: {x: 0, y: -0.70221514, z: 0, w: 0.71196485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
@@ -87,13 +87,13 @@ MonoBehaviour:
   _shotPos: {fileID: 5894631519641487449}
   _bullet: {fileID: 7872356520489850602, guid: 132c21366a9e0e847923902d91368805, type: 3}
   _bulletCharacteristics:
-    FlightSpeed: 1.2
+    FlightSpeed: 1
     TimeLife: 1
-    DamagePercentage: -35
+    DamagePercentage: -20
   _foreseMultiplier: 15
-  _delayTimeBeforeShot: 1.5
+  _delayTimeBeforeShot: 1
   _rotationSpeed: 0.5
-  _isFollowThePlayer: 0
+  _isFollowThePlayer: 1
 --- !u!1 &9966241654120529
 GameObject:
   m_ObjectHideFlags: 0

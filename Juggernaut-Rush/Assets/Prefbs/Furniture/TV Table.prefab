@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallWreckage: {fileID: 7643200461194984626}
-  _percentagofRageRecovery: 10
 --- !u!23 &7104754224089678618
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -119,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8575117319382971984}
   m_Layer: 0
-  m_Name: tv .table
+  m_Name: TV Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
