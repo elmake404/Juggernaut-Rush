@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerLife : MonoBehaviour
 {
     public static PlayerLife Instance;
-    public static bool IsGetAngry;
+    public static bool IsGetAngry, IsInFlight;
 
     private List<GameObject> _listFloor = new List<GameObject>();
     [SerializeField]
@@ -112,8 +112,17 @@ public class PlayerLife : MonoBehaviour
         }
         else
         {
-            _animator.SetBool("GetAngry", true);
-            StartCoroutine(Angry());
+            if (!IsInFlight)
+            {
+                _animator.SetInteger("GetAngry", 1);
+                StartCoroutine(Angry(1.5f));
+                IsInFlight = true;
+            }
+            else
+            {
+                _animator.SetInteger("GetAngry", 2);
+                StartCoroutine(Angry(2f));
+            }
         }
 
         GameStageEvent.StartLevel -= StartAnimationRun;
@@ -150,9 +159,9 @@ public class PlayerLife : MonoBehaviour
 
         _rbMain.velocity = jampDirection.forward * (v /*- (v / 10)*/);
     }
-    private IEnumerator Angry()
+    private IEnumerator Angry(float time )
     {
-        float timeToRage = 1.5f;
+        float timeToRage = time;
         while (timeToRage > 0)
         {
             timeToRage -= Time.fixedDeltaTime;
