@@ -37,7 +37,6 @@ public class Bullet : MonoBehaviour
             Destroy(_particle, 2);
             Destroy(gameObject);
         }
-
     }
     public void Initialization(BulletCharacteristics bullet)
     {

@@ -86,7 +86,7 @@ public class PlayerLife : MonoBehaviour
             _animator.SetBool("Win", true);
             _animator.SetBool("Run", false);
             GameStage.Instance.ChangeStage(Stage.WinGame);
-           StartCoroutine( WinGame(Finish.Instance.GetPosJamp()));
+            StartCoroutine(WinGame(Finish.Instance.GetPosJamp()));
             IsGetAngry = false;
         }
     }
@@ -148,7 +148,7 @@ public class PlayerLife : MonoBehaviour
         float v2 = ((20f * x * x) / (2 * (y - Mathf.Tan(Angel) * x) * Mathf.Pow(Mathf.Cos(Angel), 2)));
         float v = Mathf.Sqrt(Mathf.Abs(v2));
 
-        _rbMain.velocity =jampDirection.forward * (v /*- (v / 10)*/);
+        _rbMain.velocity = jampDirection.forward * (v /*- (v / 10)*/);
     }
     private IEnumerator Angry()
     {
