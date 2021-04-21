@@ -170,6 +170,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6773092328749481308}
   - component: {fileID: 8091739311948767984}
+  - component: {fileID: 2128786385480926508}
+  - component: {fileID: 5412145346732356631}
+  - component: {fileID: 3845899470018984211}
   m_Layer: 0
   m_Name: Energy Drink
   m_TagString: Untagged
@@ -213,6 +216,48 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &2128786385480926508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6247912405888231398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04032958, y: 0.063074455, z: 0.04069909}
+  m_Center: {x: 0.00035561877, y: 0.029950378, z: -0.0007658117}
+--- !u!54 &5412145346732356631
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6247912405888231398}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &3845899470018984211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6247912405888231398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd88cb5bb82e0a7468a1e3672e18d0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _percentagofRageRecovery: 50
 --- !u!1 &6425253786968176247
 GameObject:
   m_ObjectHideFlags: 0

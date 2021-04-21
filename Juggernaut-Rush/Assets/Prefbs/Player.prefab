@@ -217,6 +217,7 @@ MonoBehaviour:
   _colorRage: {r: 1, g: 0, b: 0, a: 1}
   _colorOfCalm: {r: 1, g: 1, b: 1, a: 1}
   _timeRage: 6
+  _powerOfUnstoppability: 0.5
 --- !u!1001 &231361513402878398
 PrefabInstance:
   m_ObjectHideFlags: 0

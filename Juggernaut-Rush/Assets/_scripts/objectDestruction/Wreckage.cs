@@ -8,6 +8,9 @@ public class Wreckage : MonoBehaviour
     protected Rigidbody _rbWreckage;
     [SerializeField]
     private FixedJoint _fixedJoint;
+
+    [SerializeField]
+    private bool _hardSurface;
     [SerializeField]
     private float _stressLevel; public float StressLevel
     {
@@ -16,10 +19,16 @@ public class Wreckage : MonoBehaviour
             return _stressLevel;
         }
     }
+
     [SerializeField]
     private float _percentagofRageRecovery; public float PercentagofRageRecovery
     { get { return _percentagofRageRecovery; } }
-
+    [ContextMenu("Initialization")]
+    private void Initialization()
+    {
+        _rbWreckage = GetComponent<Rigidbody>();
+        _fixedJoint = GetComponent<FixedJoint>();
+    }
 
     private void Update()
     {
@@ -44,12 +53,6 @@ public class Wreckage : MonoBehaviour
         enabled = false;
         Destroy(gameObject,2);
     }
-    [ContextMenu("Initialization")]
-    private void Initialization()
-    {
-        _rbWreckage = GetComponent<Rigidbody>();
-        _fixedJoint = GetComponent<FixedJoint>();
-    }
     public virtual void Explosion(float forese,Vector3 positionExplosion,float radius)
     {
         Destroy(_fixedJoint);
@@ -59,5 +62,23 @@ public class Wreckage : MonoBehaviour
 
         enabled = false;
         Destroy(gameObject, 2);
+    }
+    public bool TestOfStrength(float RageAmout)
+    {
+        if (_hardSurface)
+        {
+            if (RageAmout >= PlayerLife.Instance.PowerOfUnstoppability)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return true;
+        }
     }
 }

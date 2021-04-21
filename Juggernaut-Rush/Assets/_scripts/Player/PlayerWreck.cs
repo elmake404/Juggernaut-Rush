@@ -17,10 +17,17 @@ public class PlayerWreck : MonoBehaviour
         var wreckage = collision.collider.GetComponent<Wreckage>();
         if (wreckage != null)
         {
-            OnWreck?.Invoke(wreckage.StressLevel);
-            _playerLife.RestoringRage(wreckage.PercentagofRageRecovery);
+            if (wreckage.TestOfStrength(_playerLife.GetAmoutRage()))
+            {
+                OnWreck?.Invoke(wreckage.StressLevel);
+                _playerLife.RestoringRage(wreckage.PercentagofRageRecovery);
 
-            wreckage.PushWreckage((wreckage.transform.position - transform.position).normalized, collision.contacts[0].point, _impactStrength);
+                wreckage.PushWreckage((wreckage.transform.position - transform.position).normalized, collision.contacts[0].point, _impactStrength);
+            }
+            else
+            {
+                _playerLife.Death();
+            }
         }
 
     }
