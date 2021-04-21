@@ -26,10 +26,10 @@ public class PlayerLife : MonoBehaviour
     private float _timeRage;
     [SerializeField]
     [Range(0, 1)]
-    private float _powerOfUnstoppability; public float PowerOfUnstoppability
-    { get { return _powerOfUnstoppability; } }
+    private float _powerOfUnstoppability, _startPrecentRage;
     private float _timerRage;
-
+    public float PowerOfUnstoppability
+    { get { return _powerOfUnstoppability; } }
     private void Awake()
     {
         _playerMove = GetComponent<PlayerMove>();
@@ -44,7 +44,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (IsGetAngry)
         {
-            _timerRage = _timeRage;
+            _timerRage = _timeRage * _startPrecentRage;
             _meshMaterial.color = _colorRage;
         }
         else
@@ -71,7 +71,7 @@ public class PlayerLife : MonoBehaviour
 
             //_meshMaterial.color = _colorRage + (_differenceColor / 100) * ((_timeRage - _timerRage) / _timeRage * 100);
 
-            _meshMaterial.color = Vector4.Lerp(_meshMaterial.color,GetColor(),0.3f);
+            _meshMaterial.color = Vector4.Lerp(_meshMaterial.color, GetColor(), 0.3f);
         }
         else
         {
@@ -107,7 +107,7 @@ public class PlayerLife : MonoBehaviour
     }
     private Color GetColor()
     {
-        if (GetAmoutRage()> _powerOfUnstoppability)
+        if (GetAmoutRage() > _powerOfUnstoppability)
         {
             return _colorRage;
         }
@@ -181,7 +181,7 @@ public class PlayerLife : MonoBehaviour
         while (timeToRage > 0)
         {
             timeToRage -= Time.fixedDeltaTime;
-            _timerRage = Mathf.Lerp(_timerRage, _timeRage, 0.3f);
+            _timerRage = Mathf.Lerp(_timerRage, _timeRage * _startPrecentRage, 0.3f);
             yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
         IsGetAngry = true;

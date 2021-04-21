@@ -28,7 +28,7 @@ public class CanvasManager : MonoBehaviour
 
         _finishPos = Finish.Instance.transform;
         _distens = _finishPos.position.z - _playerLife.transform.position.z-0.5f;
-        _rageBar.fillAmount = 1;
+        _rageBar.fillAmount = _playerLife.GetAmoutRage();
     }
     private void FixedUpdate()
     {

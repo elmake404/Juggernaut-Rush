@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd88cb5bb82e0a7468a1e3672e18d0a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _percentagofRageRecovery: 50
+  _percentagofRageRecovery: 100
 --- !u!1 &6425253786968176247
 GameObject:
   m_ObjectHideFlags: 0
