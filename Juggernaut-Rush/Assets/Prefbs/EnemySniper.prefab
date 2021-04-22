@@ -81,8 +81,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1709756657271358499}
   _fixedJoint: {fileID: 0}
+  _hardSurface: 0
   _stressLevel: 0
-  _percentagofRageRecovery: 30
+  _percentagofRageRecovery: 10
   _animator: {fileID: 0}
   _ragdoll: {fileID: 1709756657271234283}
   _shotPos: {fileID: 5894631519641487449}
