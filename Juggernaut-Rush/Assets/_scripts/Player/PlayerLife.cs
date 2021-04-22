@@ -23,13 +23,16 @@ public class PlayerLife : MonoBehaviour
     private Color _differenceColor;
 
     [SerializeField]
-    private float _timeRage;
+    private float _timeRage, _timeBoost;
     [SerializeField]
     [Range(0, 1)]
     private float _powerOfUnstoppability, _startPrecentRage;
-    private float _timerRage;
+    private float _timerRage, _timerBoost;
+    public bool IsBoostActivation
+    { get; private set; }
     public float PowerOfUnstoppability
     { get { return _powerOfUnstoppability; } }
+
     private void Awake()
     {
         _playerMove = GetComponent<PlayerMove>();
@@ -62,9 +65,8 @@ public class PlayerLife : MonoBehaviour
                 if (_timerRage > 0.01f)
                 {
                     _animator.speed = _playerMove.GetAmoutSpeed();
-                    _timerRage -= Time.deltaTime;
+                    //_timerRage -= Time.deltaTime;
                 }
-            //else
             //{
             //    Death();
             //}
@@ -107,7 +109,7 @@ public class PlayerLife : MonoBehaviour
     }
     private Color GetColor()
     {
-        if (GetAmoutRage() > _powerOfUnstoppability)
+        if (IsBoostActivation)
         {
             return _colorRage;
         }
@@ -158,6 +160,10 @@ public class PlayerLife : MonoBehaviour
         _steem.Stop();
 
         yield return new WaitForSeconds(0.4f);
+        Jamp(jampDirection);
+    }
+    private void Jamp(Transform jampDirection)
+    {
         Vector3 PosJamp = jampDirection.position;
         PosJamp.x = transform.position.x;
         _rbMain.constraints = RigidbodyConstraints.FreezeRotation;
@@ -174,6 +180,7 @@ public class PlayerLife : MonoBehaviour
         float v = Mathf.Sqrt(Mathf.Abs(v2));
 
         _rbMain.velocity = jampDirection.forward * (v /*- (v / 10)*/);
+
     }
     private IEnumerator Angry(float time)
     {
@@ -190,6 +197,21 @@ public class PlayerLife : MonoBehaviour
         _animator.SetBool("Run", true);
 
     }
+    private IEnumerator Boost()
+    {
+        _timerBoost = _timeBoost;
+        IsBoostActivation = true;
+        while (true)
+        {
+            _timerBoost -= Time.deltaTime;
+            yield return new WaitForSeconds(Time.deltaTime);
+            if (_timerBoost <= 0)
+            {
+                break;
+            }
+        }
+        IsBoostActivation = false;
+    }
     public void Death()
     {
         _steem.Stop();
@@ -198,18 +220,26 @@ public class PlayerLife : MonoBehaviour
         GameStage.Instance.ChangeStage(Stage.LostGame);
     }
     public float GetAmoutRage() => (_timerRage / _timeRage);
+    public float GetAmoutBoost() => (_timerBoost / _timeBoost);
     public void RestoringRage(float procent)
     {
-        _timerRage += _timeRage / 100 * procent;
+        if (!IsBoostActivation)
+        {
+            _timerRage += _timeRage / 100 * procent;
 
-        if (_timerRage > _timeRage)
-        {
-            _timerRage = _timeRage;
-        }
-        else if (0 > _timerRage && procent < 0)
-        {
-            _timerRage = 0;
-            Death();
+            if (_timerRage > _timeRage)
+            {
+                _timerBoost += _timerRage - _timeRage;
+                if (_timerBoost >= _timeBoost)
+                    StartCoroutine(Boost());
+
+                _timerRage = _timeRage;
+            }
+            else if (0 > _timerRage && procent < 0)
+            {
+                _timerRage = 0;
+                Death();
+            }
         }
     }
 }

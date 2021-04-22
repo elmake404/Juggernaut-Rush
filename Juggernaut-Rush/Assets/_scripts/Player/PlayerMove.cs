@@ -25,7 +25,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private PlayerLife _playerLife;
     [SerializeField]
-    private float _lateralSpeed, _runningSpeed;
+    private float _lateralSpeed, _runningSpeed, _boosterAccelerationPercentage;
     [SerializeField]
     private float _horizontalLimit;
 
@@ -140,8 +140,8 @@ public class PlayerMove : MonoBehaviour
             positive += (positive / 100) * _ListPositivBost[i];
         }
         positive -= Speed;
-
-        return Speed+(negative+positive);
+        float addSpeed = _playerLife.IsBoostActivation ? (Speed / 100) * _boosterAccelerationPercentage:0;
+        return Speed+(negative+positive)+addSpeed;
     }
     public bool PossibleToRun() => (PlayerLife.IsGetAngry && GameStage.IsGameFlowe);
     public float GetAmoutSpeed()
@@ -159,8 +159,8 @@ public class PlayerMove : MonoBehaviour
             positive += (positive / 100) * _ListPositivBost[i];
         }
         positive -= 1;
-
-        return 1 + (negative + positive);
+        float addSpeed = _playerLife.IsBoostActivation ? (1f/ 100f) * _boosterAccelerationPercentage : 0;
+        return 1 + (negative + positive) + addSpeed;
 
     }
     

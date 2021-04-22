@@ -9,7 +9,7 @@ public class CanvasManager : MonoBehaviour
     [SerializeField]
     private GameObject _menuUI, _inGameUI, _wimIU, _lostUI;
     [SerializeField]
-    private Image _rageBar, _levelBar;
+    private Image _rageBar, _levelBar,_boosterBar;
     private PlayerLife _playerLife;
     private Transform _finishPos;
     [SerializeField]
@@ -33,6 +33,7 @@ public class CanvasManager : MonoBehaviour
     private void FixedUpdate()
     {
         _rageBar.fillAmount = Mathf.LerpUnclamped(_rageBar.fillAmount, _playerLife.GetAmoutRage(), 0.1f);
+        _boosterBar.fillAmount = Mathf.LerpUnclamped(_boosterBar.fillAmount, _playerLife.GetAmoutBoost(), 0.1f);
         AmoutDistensTraveled();
     }
     private void AmoutDistensTraveled()
