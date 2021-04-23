@@ -149,82 +149,82 @@ PrefabInstance:
     - target: {fileID: 1709960669552808533, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1709960669552808533, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2300002420171237556, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2300002420171237556, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2849036021352515006, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2849036021352515006, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3001866480217174111, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3001866480217174111, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4110933181028657880, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4110933181028657880, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4409155575094728083, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4409155575094728083, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4537856192952047586, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4537856192952047586, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4747244230367947818, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4747244230367947818, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5991331427073211538, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
@@ -239,12 +239,12 @@ PrefabInstance:
     - target: {fileID: 6278255737295973289, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6278255737295973289, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6372220309208393256, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
@@ -319,42 +319,42 @@ PrefabInstance:
     - target: {fileID: 6850400285774998996, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6850400285774998996, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7435192056384068183, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7435192056384068183, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7504769109789823972, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7504769109789823972, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8293416575359416688, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 8293416575359416688, guid: 005ef188f15a6234cad0058c1625aceb,
         type: 3}
       propertyPath: _percentagofRageRecovery
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 005ef188f15a6234cad0058c1625aceb, type: 3}

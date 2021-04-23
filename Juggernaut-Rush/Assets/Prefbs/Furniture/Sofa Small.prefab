@@ -218,7 +218,7 @@ PrefabInstance:
     - target: {fileID: 621430607559865874, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 621430607559865874, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -233,7 +233,7 @@ PrefabInstance:
     - target: {fileID: 704058660226044826, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 704058660226044826, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -268,7 +268,7 @@ PrefabInstance:
     - target: {fileID: 1596900999235257087, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1596900999235257087, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -278,7 +278,7 @@ PrefabInstance:
     - target: {fileID: 1678999926104471132, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1678999926104471132, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -313,7 +313,7 @@ PrefabInstance:
     - target: {fileID: 2279063423539709007, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2279063423539709007, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -333,7 +333,7 @@ PrefabInstance:
     - target: {fileID: 2808532205271372902, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2808532205271372902, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -348,7 +348,7 @@ PrefabInstance:
     - target: {fileID: 3211295784444854415, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3211295784444854415, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -368,7 +368,7 @@ PrefabInstance:
     - target: {fileID: 3860463274871586107, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3860463274871586107, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -398,7 +398,7 @@ PrefabInstance:
     - target: {fileID: 4723540823826715371, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4723540823826715371, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -413,7 +413,7 @@ PrefabInstance:
     - target: {fileID: 4772722286668461707, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4772722286668461707, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -423,7 +423,7 @@ PrefabInstance:
     - target: {fileID: 4845813300369497835, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4845813300369497835, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -453,7 +453,7 @@ PrefabInstance:
     - target: {fileID: 5146841649458052038, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5146841649458052038, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -463,7 +463,7 @@ PrefabInstance:
     - target: {fileID: 5324562091851306213, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5324562091851306213, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -473,7 +473,7 @@ PrefabInstance:
     - target: {fileID: 5459072767026028910, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5459072767026028910, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -528,7 +528,7 @@ PrefabInstance:
     - target: {fileID: 7001384263745959403, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7001384263745959403, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -538,7 +538,7 @@ PrefabInstance:
     - target: {fileID: 7008323335524796520, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7008323335524796520, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -548,7 +548,7 @@ PrefabInstance:
     - target: {fileID: 7041515990789543027, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7041515990789543027, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -558,7 +558,7 @@ PrefabInstance:
     - target: {fileID: 7074863180138939408, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7074863180138939408, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -568,7 +568,7 @@ PrefabInstance:
     - target: {fileID: 7779549217060139628, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7779549217060139628, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -583,7 +583,7 @@ PrefabInstance:
     - target: {fileID: 7962241679283371918, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7962241679283371918, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -603,7 +603,7 @@ PrefabInstance:
     - target: {fileID: 8803024788332903618, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 8803024788332903618, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
@@ -618,7 +618,7 @@ PrefabInstance:
     - target: {fileID: 9202175454100936830, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
       propertyPath: _stressLevel
-      value: 0.0025
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 9202175454100936830, guid: 6a81c45cd7c3e4f4dabcea4408529dac,
         type: 3}
