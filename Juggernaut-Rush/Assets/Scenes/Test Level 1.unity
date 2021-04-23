@@ -699,12 +699,27 @@ PrefabInstance:
     - target: {fileID: 2316373548210243520, guid: 9f4de94c1db67e541b227a0cad1d284f,
         type: 3}
       propertyPath: _startPrecentRage
-      value: 0.5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316373548210243520, guid: 9f4de94c1db67e541b227a0cad1d284f,
+        type: 3}
+      propertyPath: _timeBoost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316373548210243520, guid: 9f4de94c1db67e541b227a0cad1d284f,
+        type: 3}
+      propertyPath: _timeRage
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3690951079998132390, guid: 9f4de94c1db67e541b227a0cad1d284f,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624725687656602865, guid: 9f4de94c1db67e541b227a0cad1d284f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8185001509258575425, guid: 9f4de94c1db67e541b227a0cad1d284f,
         type: 3}
@@ -7704,11 +7719,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5974982526115931242, guid: a3bc3539d21bb0949960f28085dd41c3,
-        type: 3}
-      propertyPath: _animator
-      value: 
-      objectReference: {fileID: 1945106706}
     - target: {fileID: 5974982526115931243, guid: a3bc3539d21bb0949960f28085dd41c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10010,12 +10020,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2841751741686815012, guid: 868a15c75d5b263498ec1e6a9093e282,
     type: 3}
   m_PrefabInstance: {fileID: 601178001}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1945106706 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7849755309005361350, guid: a3bc3539d21bb0949960f28085dd41c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1524330331}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1974800109 stripped
 Transform:

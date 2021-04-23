@@ -5,11 +5,14 @@ using UnityEngine;
 public class SpeedInspector : MonoBehaviour
 {
     [SerializeField]
-    private float _bonus, _timeOfAction;
-    [SerializeField]
     private Animator _animator;
     [SerializeField]
     private ParticleSystem _particle;
+    [SerializeField]
+    private float _bonus, _timeOfAction, _percentagofRageRecovery; 
+    public float PercentagofRageRecovery
+    { get { return _percentagofRageRecovery; } }
+
     public float Bonus { get { return _bonus; } }
     public float TimeOfAction { get { return _timeOfAction; } }
 

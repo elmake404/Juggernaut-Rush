@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
             return Min + (_difference * Amout);
         }
     }
-    private Vector3 _startTouchPos, _currentPosPlayer, _targetPosPlayer,_startPosPlayer;
+    private Vector3 _startTouchPos, _currentPosPlayer, _targetPosPlayer, _startPosPlayer;
     private List<float> _ListPositivBost = new List<float>();
     private List<float> _ListNegativBost = new List<float>();
     private Camera _cam;
@@ -83,37 +83,38 @@ public class PlayerMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.parent!=null)
+        if (other.transform.parent != null)
         {
             SpeedInspector inspector = other.transform.parent.GetComponent<SpeedInspector>();
             if (inspector != null)
             {
                 inspector.Act();
+                _playerLife.RestoringRage(inspector.PercentagofRageRecovery);
                 StartCoroutine(Buff(inspector.Bonus, inspector.TimeOfAction));
             }
         }
     }
     private float CheckLimmit(Vector3 target)
     {
-        if (target.x >_startPosPlayer.x+_horizontalLimit)
+        if (target.x > _startPosPlayer.x + _horizontalLimit)
         {
             target.x = _startPosPlayer.x + _horizontalLimit;
         }
-        else if (target.x <_startPosPlayer.x-_horizontalLimit)
+        else if (target.x < _startPosPlayer.x - _horizontalLimit)
         {
             target.x = _startPosPlayer.x - _horizontalLimit;
         }
         return target.x;
     }
-    private IEnumerator Buff(float Procent,float time)
+    private IEnumerator Buff(float Procent, float time)
     {
-        if (Procent>0)
+        if (Procent > 0)
         {
             _ListPositivBost.Add(Procent);
             yield return new WaitForSeconds(time);
             _ListPositivBost.Remove(Procent);
         }
-        else
+        else if (!_playerLife.IsBoostActivation)
         {
             _ListNegativBost.Add(Procent);
             yield return new WaitForSeconds(time);
@@ -123,14 +124,18 @@ public class PlayerMove : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.blue;
-        Gizmos.DrawLine(transform.position- Vector3.right*_horizontalLimit,transform.position+Vector3.right*_horizontalLimit);
+        Gizmos.DrawLine(transform.position - Vector3.right * _horizontalLimit, transform.position + Vector3.right * _horizontalLimit);
     }
     private float GetSpeed(float Speed)
     {
         float negative = Speed;
-        for (int i = 0; i < _ListNegativBost.Count; i++)
+
+        if (!_playerLife.IsBoostActivation)
         {
-            negative += (negative / 100) * _ListNegativBost[i];
+            for (int i = 0; i < _ListNegativBost.Count; i++)
+            {
+                negative += (negative / 100) * _ListNegativBost[i];
+            }
         }
         negative -= Speed;
 
@@ -140,8 +145,8 @@ public class PlayerMove : MonoBehaviour
             positive += (positive / 100) * _ListPositivBost[i];
         }
         positive -= Speed;
-        float addSpeed = _playerLife.IsBoostActivation ? (Speed / 100) * _boosterAccelerationPercentage:0;
-        return Speed+(negative+positive)+addSpeed;
+        float addSpeed = _playerLife.IsBoostActivation ? (Speed / 100) * _boosterAccelerationPercentage : 0;
+        return Speed + (negative + positive) + addSpeed;
     }
     public bool PossibleToRun() => (PlayerLife.IsGetAngry && GameStage.IsGameFlowe);
     public float GetAmoutSpeed()
@@ -159,10 +164,10 @@ public class PlayerMove : MonoBehaviour
             positive += (positive / 100) * _ListPositivBost[i];
         }
         positive -= 1;
-        float addSpeed = _playerLife.IsBoostActivation ? (1f/ 100f) * _boosterAccelerationPercentage : 0;
+        float addSpeed = _playerLife.IsBoostActivation ? (1f / 100f) * _boosterAccelerationPercentage : 0;
         return 1 + (negative + positive) + addSpeed;
 
     }
-    
-    
+
+
 }

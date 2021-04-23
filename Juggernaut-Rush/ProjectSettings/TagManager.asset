@@ -24,8 +24,8 @@ TagManager:
   - Player
   - Wall
   - Bullet
-  - 
-  - 
+  - HardSurface
+  - CastomCollider
   - 
   - 
   - 

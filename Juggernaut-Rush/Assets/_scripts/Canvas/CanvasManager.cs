@@ -9,7 +9,8 @@ public class CanvasManager : MonoBehaviour
     [SerializeField]
     private GameObject _menuUI, _inGameUI, _wimIU, _lostUI;
     [SerializeField]
-    private Image _rageBar, _levelBar,_boosterBar;
+    private Image _rageBar, _levelBar;
+    private Image _boosterBar;
     private PlayerLife _playerLife;
     private Transform _finishPos;
     [SerializeField]
@@ -25,6 +26,7 @@ public class CanvasManager : MonoBehaviour
         _textLevelCurent.text = PlayerPrefs.GetInt("Level").ToString();
         _textLevelTarget.text = (PlayerPrefs.GetInt("Level") +1).ToString();
         _playerLife = PlayerLife.Instance;
+        _boosterBar = _playerLife.BarRage.GetComponent<Image>();
 
         _finishPos = Finish.Instance.transform;
         _distens = _finishPos.position.z - _playerLife.transform.position.z-0.5f;

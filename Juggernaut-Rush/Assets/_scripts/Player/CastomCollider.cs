@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class CastomCollider : MonoBehaviour
 {
-    [SerializeField]
     private List<InsurmountableObstacle> _insurmountableObstacles = new List<InsurmountableObstacle>();
-    //[SerializeField]
-    //private Transform _
+    [SerializeField]
+    private Transform _player;
 
     [SerializeField]
     private float _radius;
@@ -18,7 +17,7 @@ public class CastomCollider : MonoBehaviour
         {
             for (int i = 0; i < _insurmountableObstacles.Count; i++)
             {
-                transform.position -= _insurmountableObstacles[i].TouchTest(transform.position, _radius);
+                _player.position -= _insurmountableObstacles[i].TouchTest(transform.position, _radius);
             }
         }
     }

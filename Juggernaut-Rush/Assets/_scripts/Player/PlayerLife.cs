@@ -17,6 +17,9 @@ public class PlayerLife : MonoBehaviour
     private PlayerMove _playerMove;
     [SerializeField]
     private ParticleSystem _steem;
+    [SerializeField]
+    private GameObject _barRage;public GameObject BarRage 
+    { get { return _barRage; } }
 
     [SerializeField]
     private Color _colorRage = Color.red, _colorOfCalm = Color.white;
@@ -148,6 +151,7 @@ public class PlayerLife : MonoBehaviour
         _animator.SetBool("Fly", true);
         _animator.SetBool("Run", false);
 
+        _barRage.SetActive(false);
         _steem.Stop();
 
         _rbMain.constraints = RigidbodyConstraints.FreezeRotation;
@@ -158,6 +162,7 @@ public class PlayerLife : MonoBehaviour
     }
     private IEnumerator WinGame(Transform jampDirection)
     {
+        _barRage.SetActive(false);
         _steem.Stop();
 
         yield return new WaitForSeconds(0.4f);
@@ -218,6 +223,7 @@ public class PlayerLife : MonoBehaviour
     }
     public void Death()
     {
+        _barRage.SetActive(false);
         _steem.Stop();
         _animator.SetBool("Death", true);
         _animator.SetBool("Run", false);
