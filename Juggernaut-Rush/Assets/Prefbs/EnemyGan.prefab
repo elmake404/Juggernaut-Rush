@@ -80,6 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 7742749859515596369}
   _fixedJoint: {fileID: 0}
+  _hardSurface: 0
   _stressLevel: 0
   _percentagofRageRecovery: 30
   _animator: {fileID: 9129519009961174359}
@@ -89,9 +90,9 @@ MonoBehaviour:
   _bulletCharacteristics:
     FlightSpeed: 1
     TimeLife: 1
-    DamagePercentage: -25
+    DamagePercentage: -0.25
   _foreseMultiplier: 15
-  _delayTimeBeforeShot: 1
+  _delayTimeBeforeShot: 0.75
   _rotationSpeed: 0.5
   _isFollowThePlayer: 1
 --- !u!1 &9966241654120529

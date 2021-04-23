@@ -4902,7 +4902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc36b0f5a8832e34a8db3e80777cd582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bonus: -50
+  _bonus: -75
   _timeOfAction: 2
   _animator: {fileID: 7849755309005361350}
   _particle: {fileID: 6787556488137819033}

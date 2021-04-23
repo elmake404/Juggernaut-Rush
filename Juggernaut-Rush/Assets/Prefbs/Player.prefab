@@ -183,7 +183,7 @@ MonoBehaviour:
   _playerLife: {fileID: 2316373548210243520}
   _lateralSpeed: 0.25
   _runningSpeed: 0.35
-  _boosterAccelerationPercentage: 100
+  _boosterAccelerationPercentage: 50
   _horizontalLimit: 12.47
 --- !u!114 &8963431280267053471
 MonoBehaviour:
@@ -217,11 +217,11 @@ MonoBehaviour:
   _steem: {fileID: 7215636856530447454}
   _colorRage: {r: 1, g: 0, b: 0, a: 1}
   _colorOfCalm: {r: 1, g: 1, b: 1, a: 1}
-  _timeRage: 20
-  _timeBoost: 3
-  _bonusValue: 4
-  _powerOfUnstoppability: 0.5
-  _startPrecentRage: 0.71
+  _timeRage: 8
+  _timeBoost: 4
+  _bonusValue: 2.5
+  _powerOfUnstoppability: 0
+  _startPrecentRage: 0.5
 --- !u!1001 &231361513402878398
 PrefabInstance:
   m_ObjectHideFlags: 0
