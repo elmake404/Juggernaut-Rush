@@ -219,6 +219,7 @@ MonoBehaviour:
   _colorOfCalm: {r: 1, g: 1, b: 1, a: 1}
   _timeRage: 20
   _timeBoost: 3
+  _bonusValue: 4
   _powerOfUnstoppability: 0.5
   _startPrecentRage: 0.71
 --- !u!1001 &231361513402878398

@@ -698,11 +698,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2316373548210243520, guid: 9f4de94c1db67e541b227a0cad1d284f,
         type: 3}
-      propertyPath: _timeRage
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2316373548210243520, guid: 9f4de94c1db67e541b227a0cad1d284f,
-        type: 3}
       propertyPath: _startPrecentRage
       value: 0.5
       objectReference: {fileID: 0}
