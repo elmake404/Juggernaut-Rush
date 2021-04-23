@@ -141,8 +141,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6365452268548210735}
   _fixedJoint: {fileID: 1042938003326574314}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &505725180940380977
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,8 +285,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 5047870311354998448}
   _fixedJoint: {fileID: 9024490672575243735}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &625298420445405083
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,8 +429,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8150665434963896126}
   _fixedJoint: {fileID: 5065304284436016484}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &692336295974916566
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,8 +573,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1278924241555213201}
   _fixedJoint: {fileID: 4444130587742781214}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &1163846142674462518
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,8 +717,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 5920958098949929294}
   _fixedJoint: {fileID: 7084053258153028285}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &1245620895653097958
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,8 +861,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1372352698394052277}
   _fixedJoint: {fileID: 7497419336291558411}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &1768843692280870946
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,8 +1005,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 3670484084352664996}
   _fixedJoint: {fileID: 8862093797277496085}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &1882812594994842179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,8 +1149,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4108546598795541876}
   _fixedJoint: {fileID: 5123862284346868491}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &1983548712128334857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,8 +1293,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4057614618121129072}
   _fixedJoint: {fileID: 3502727204248344970}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &2184955242269896860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,8 +1437,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6803684855699067302}
   _fixedJoint: {fileID: 2313251585647313270}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &2279272339889323619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,8 +1581,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6607420306024216420}
   _fixedJoint: {fileID: 7563402966454746557}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &2293641127367303037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,8 +1725,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 2157197614116686877}
   _fixedJoint: {fileID: 3413323032820047883}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &2364997693156965075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,8 +1869,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 1739928440792529548}
   _fixedJoint: {fileID: 5005587006665849027}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &2382031576017912556
 GameObject:
   m_ObjectHideFlags: 0
@@ -2000,8 +2013,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4177898745821133113}
   _fixedJoint: {fileID: 4780434847793592391}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &2622227340388969407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,8 +2157,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 309160910346867269}
   _fixedJoint: {fileID: 3848266986993141127}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &3286871066276816757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,8 +2301,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4884090497261213271}
   _fixedJoint: {fileID: 4441146426758996447}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &3341343019865781779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,8 +2445,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6142496206052661940}
   _fixedJoint: {fileID: 1389650216886139194}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &3417962245659230647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,8 +2589,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4771293838880319703}
   _fixedJoint: {fileID: 3572302413694269956}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &3539150969589245511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2715,8 +2733,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4820749946415640913}
   _fixedJoint: {fileID: 8755513448291503319}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &3904862755715298177
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,8 +2877,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4796035358008551480}
   _fixedJoint: {fileID: 7171626289072987060}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &4068615834261990874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,8 +3021,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 5175427818387732276}
   _fixedJoint: {fileID: 3096850084714359160}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &4346893489465064030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,8 +3165,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 3332783630845742538}
   _fixedJoint: {fileID: 8246095781488464265}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &4475619334041671821
 GameObject:
   m_ObjectHideFlags: 0
@@ -3287,8 +3309,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 3881526950879727827}
   _fixedJoint: {fileID: 3169039558371491766}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &4597025279254826016
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,8 +3453,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 7493532699586063823}
   _fixedJoint: {fileID: 175521838493152357}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &4843753855573789884
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,8 +3597,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6704453504851307856}
   _fixedJoint: {fileID: 1063461991334575443}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &4881101679900036404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,8 +3741,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8900147395627720303}
   _fixedJoint: {fileID: 6161155277334126295}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &5177864849924543422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,8 +3959,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8519142355612315654}
   _fixedJoint: {fileID: 5613787831396042579}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &5998199060543339860
 GameObject:
   m_ObjectHideFlags: 0
@@ -4076,8 +4103,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 5710759502607516995}
   _fixedJoint: {fileID: 2653061271127351640}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &6115555239699386100
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,8 +4247,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 3314201548133238771}
   _fixedJoint: {fileID: 8824179173846865042}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &6174840252712565884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4375,8 +4404,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6374833534409087989}
   _fixedJoint: {fileID: 8605780314564231447}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &6225076922429798976
 GameObject:
   m_ObjectHideFlags: 0
@@ -4518,8 +4548,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8103918829319398976}
   _fixedJoint: {fileID: 861709016793828082}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &6392554545898241055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4661,8 +4692,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 7237942583337931058}
   _fixedJoint: {fileID: 7433556220792869053}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &6839703413689023822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4804,8 +4836,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 7828139452918428320}
   _fixedJoint: {fileID: 1752725350766216937}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &6868755096202459121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4947,8 +4980,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6272188508599358133}
   _fixedJoint: {fileID: 7502706330769539514}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &7067293012868653671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5090,8 +5124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 5713459536931054083}
   _fixedJoint: {fileID: 7449483105751892537}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &7386069841080654544
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,8 +5268,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8370484268034240175}
   _fixedJoint: {fileID: 5591477959327243665}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &7390059771147581837
 GameObject:
   m_ObjectHideFlags: 0
@@ -5376,8 +5412,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6931186633931576971}
   _fixedJoint: {fileID: 4424219391766174579}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &7394433173662055941
 GameObject:
   m_ObjectHideFlags: 0
@@ -5519,8 +5556,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 3790523530445098309}
   _fixedJoint: {fileID: 5456195521406389186}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &7558350584363021192
 GameObject:
   m_ObjectHideFlags: 0
@@ -5662,8 +5700,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 8737726121632561263}
   _fixedJoint: {fileID: 436331285289451142}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &7883841201136245008
 GameObject:
   m_ObjectHideFlags: 0
@@ -5805,8 +5844,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 4824113242506614438}
   _fixedJoint: {fileID: 4466559648733089210}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &8372077812495694480
 GameObject:
   m_ObjectHideFlags: 0
@@ -5948,8 +5988,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 2477544287985805813}
   _fixedJoint: {fileID: 7512479174521840368}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &8808704988271942012
 GameObject:
   m_ObjectHideFlags: 0
@@ -6091,8 +6132,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 3430661261617820168}
   _fixedJoint: {fileID: 3054815949803122825}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &9113907060243651077
 GameObject:
   m_ObjectHideFlags: 0
@@ -6234,8 +6276,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 6489871113239611656}
   _fixedJoint: {fileID: 1220441805049277516}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
 --- !u!1 &9187052132228371037
 GameObject:
   m_ObjectHideFlags: 0
@@ -6377,5 +6420,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rbWreckage: {fileID: 2030288739829334552}
   _fixedJoint: {fileID: 7780075133548578981}
-  _stressLevel: 0
-  _percentagofRageRecovery: 0
+  _hardSurface: 0
+  _stressLevel: 0.01
+  _percentagofRageRecovery: 0.5
