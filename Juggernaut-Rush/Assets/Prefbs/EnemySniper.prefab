@@ -95,7 +95,7 @@ MonoBehaviour:
   _foreseMultiplier: 7
   _delayTimeBeforeShot: 1.5
   _rotationSpeed: 0.5
-  _isFollowThePlayer: 0
+  _isFollowThePlayer: 1
 --- !u!1 &9966241654120529
 GameObject:
   m_ObjectHideFlags: 0
