@@ -13,22 +13,23 @@ public class InsurmountableObstacle : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, _radius);
     }
 
-    public void TouchTest(Vector3 position, float radius)
+    public Vector3 TouchTest(Vector3 position, float radius)
     {
         position.y = 0;
         Vector3 posObj = transform.position;
         posObj.y = 0;
 
-        Vector3 ExtremePointPositionTarget = position + GetExtremePointPosition(position, posObj, radius);
-        Vector3 ExtremePointPositionObj = posObj + GetExtremePointPosition(posObj, position, _radius);
+        Vector3 ExtremePointPositionTarget = transform.InverseTransformPoint(position + GetExtremePointPosition(position, posObj, radius));
+        Vector3 ExtremePointPositionObj = transform.InverseTransformPoint(posObj + GetExtremePointPosition(posObj, position, _radius));
 
-        if (TouchCheck(transform.InverseTransformPoint(ExtremePointPositionTarget), transform.InverseTransformPoint(ExtremePointPositionObj)))
+        if (TouchCheck(ExtremePointPositionTarget, ExtremePointPositionObj))
         {
-            Debug.Log(1234);
+            return (ExtremePointPositionTarget - ExtremePointPositionObj);
         }
-        //Debug.Log(transform.InverseTransformPoint(ExtremePointPositionTarget));
-        //Debug.Log(transform.InverseTransformPoint(ExtremePointPositionObj));
-
+        else
+        {
+            return Vector3.zero;
+        }
     }
 
     private Vector3 GetExtremePointPosition(Vector3 posReference, Vector3 posTarget, float radius)
@@ -36,13 +37,13 @@ public class InsurmountableObstacle : MonoBehaviour
         Vector3 ExtremePoint = posTarget - posReference;
         return ExtremePoint.normalized * radius;
     }
-    private bool TouchCheck(Vector3 positiontarget,Vector3 positionObj)
+    private bool TouchCheck(Vector3 positiontarget, Vector3 positionObj)
     {
-        if (Mathf.Abs(positionObj.x)<Mathf.Abs(positiontarget.x))
+        if (Mathf.Abs(positionObj.x) > Mathf.Abs(positiontarget.x))
         {
             return true;
         }
-        else if (Mathf.Abs(positionObj.y) < Mathf.Abs(positiontarget.y))
+        else if (Mathf.Abs(positionObj.y) > Mathf.Abs(positiontarget.y))
         {
             return true;
         }
