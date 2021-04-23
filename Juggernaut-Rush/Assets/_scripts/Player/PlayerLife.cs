@@ -205,7 +205,7 @@ public class PlayerLife : MonoBehaviour
         while (true)
         {
             _timerBoost -= Time.deltaTime;
-            yield return new WaitForSeconds(Time.deltaTime);
+            yield return new WaitForSeconds(Time.fixedDeltaTime);
             if (_timerBoost <= 0)
             {
                 break;

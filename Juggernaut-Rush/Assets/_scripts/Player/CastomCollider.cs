@@ -12,7 +12,13 @@ public class CastomCollider : MonoBehaviour
 
     private void LateUpdate()
     {
-        
+        if (_insurmountableObstacles.Count>0)
+        {
+            for (int i = 0; i < _insurmountableObstacles.Count; i++)
+            {
+                _insurmountableObstacles[i].TouchTest(transform.position,_radius);
+            }
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
