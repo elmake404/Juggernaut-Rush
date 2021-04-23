@@ -657,11 +657,6 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 2.078259
       objectReference: {fileID: 0}
-    - target: {fileID: 2316373548210243520, guid: 9f4de94c1db67e541b227a0cad1d284f,
-        type: 3}
-      propertyPath: _timeBoost
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3690951079998132390, guid: 9f4de94c1db67e541b227a0cad1d284f,
         type: 3}
       propertyPath: m_RootOrder

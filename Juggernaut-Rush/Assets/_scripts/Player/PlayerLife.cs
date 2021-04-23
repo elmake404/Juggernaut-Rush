@@ -23,7 +23,7 @@ public class PlayerLife : MonoBehaviour
     private Color _differenceColor;
 
     [SerializeField]
-    private float _timeRage, _timeBoost;
+    private float _timeRage, _timeBoost, _bonusValue;
     [SerializeField]
     [Range(0, 1)]
     private float _powerOfUnstoppability, _startPrecentRage;
@@ -35,6 +35,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Awake()
     {
+        if (_bonusValue <= 0) _bonusValue = 1;
         _playerMove = GetComponent<PlayerMove>();
         Instance = this;
         GameStageEvent.StartLevel += StartAnimationRun;
@@ -229,7 +230,7 @@ public class PlayerLife : MonoBehaviour
 
             if (_timerRage > _timeRage)
             {
-                _timerBoost += _timerRage - _timeRage;
+                _timerBoost += (_timerRage - _timeRage)/_bonusValue;
                 if (_timerBoost >= _timeBoost)
                     StartCoroutine(Boost());
 
