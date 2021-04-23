@@ -204,13 +204,16 @@ public class PlayerLife : MonoBehaviour
         IsBoostActivation = true;
         while (true)
         {
-            _timerBoost -= Time.deltaTime;
-            yield return new WaitForSeconds(Time.fixedDeltaTime);
+            //_timerBoost -= Time.fixedDeltaTime;
+            yield return new WaitForSeconds(_timeBoost/20);
+            _timerBoost -= _timeBoost/20;
+
             if (_timerBoost <= 0)
             {
                 break;
             }
         }
+
         IsBoostActivation = false;
     }
     public void Death()

@@ -17,10 +17,10 @@ public class Barrier : MonoBehaviour
         if (other.transform.parent != null)
             if (other.transform.parent.gameObject == PlayerLife.Instance.gameObject)
             {
-                if (_playerLife.GetAmoutRage()<_playerLife.PowerOfUnstoppability)
-                {
-                    _playerLife.Death();
-                }
+                //if (_playerLife.GetAmoutRage()<_playerLife.PowerOfUnstoppability)
+                //{
+                //    _playerLife.Death();
+                //}
                 Detonation();
             }
 
