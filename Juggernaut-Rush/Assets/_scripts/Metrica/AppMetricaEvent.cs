@@ -10,6 +10,7 @@ public static class AppMetricaEvent
         tutParms["Level Namber"] = Level.ToString();
 
         AppMetrica.Instance.ReportEvent("level_start",tutParms);
+        AppMetrica.Instance.SendEventsBuffer();
     }
     public static void LevelFinish(int Level)
     {
@@ -17,5 +18,6 @@ public static class AppMetricaEvent
         tutParms["Level Namber"] = Level.ToString();
         
         AppMetrica.Instance.ReportEvent("level_finish", tutParms);
+        AppMetrica.Instance.SendEventsBuffer();
     }
 }

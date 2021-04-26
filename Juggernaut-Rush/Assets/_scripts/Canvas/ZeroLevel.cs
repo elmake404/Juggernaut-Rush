@@ -11,6 +11,10 @@ public class ZeroLevel : MonoBehaviour
         {
             PlayerPrefs.SetInt("Scenes", 1);
         }
+        if (PlayerPrefs.GetInt("Level") <=0)
+        {
+            PlayerPrefs.SetInt("Level", 1);
+        }
 
         if (PlayerPrefs.GetInt("Scenes") < SceneManager.sceneCountInBuildSettings)
         {
