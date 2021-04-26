@@ -891,7 +891,6 @@ MonoBehaviour:
   _lostUI: {fileID: 1401342752598832}
   _rageBar: {fileID: 4423600707285466958}
   _levelBar: {fileID: 114592505259201384}
-  _boosterBar: {fileID: 1333934559598423247}
   _textLevelWin: {fileID: 114571137488477882}
   _textLevelCurent: {fileID: 114298626813103218}
   _textLevelTarget: {fileID: 114444994017357224}
@@ -4753,7 +4752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &224353578050052204
 RectTransform:
   m_ObjectHideFlags: 0

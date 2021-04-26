@@ -90,7 +90,7 @@ MonoBehaviour:
   _bulletCharacteristics:
     FlightSpeed: 1
     TimeLife: 1
-    DamagePercentage: -0.25
+    DamagePercentage: -25
   _foreseMultiplier: 15
   _delayTimeBeforeShot: 0.75
   _rotationSpeed: 0.5
